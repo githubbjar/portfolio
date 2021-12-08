@@ -17,9 +17,9 @@ function App() {
         <Container>
           <Navbar.Brand href="#home">Jerry Janquart / Portfolio</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Github</Nav.Link>
-            <Nav.Link href="#features">LinkedIn</Nav.Link>
-            <Nav.Link href="#pricing">Contact</Nav.Link>
+            <Nav.Link href="https://github.com/githubbjar/portfolio">Github</Nav.Link>
+            <Nav.Link href="https://www.linkedin.com/in/jerry-janquart-67aa608/">LinkedIn</Nav.Link>
+            <Nav.Link href="">Contact</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
