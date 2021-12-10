@@ -53,11 +53,10 @@ export default function LayoutCard() {
         <Card>
             <Card.Img variant="top" src={home} onClick={handleShow} />
             <Card.Body>
-                <Card.Title>::: Spreads</Card.Title>
+                <Card.Title>Spreads</Card.Title>
                 <Card.Text>
                 Layout / Concept / Design 
                 </Card.Text>
-                <Button variant="secondary" onClick={handleShow}>Slideshow</Button>
 
                 <Modal show={show} onHide={handleClose} size="lg">
                     <Modal.Body>

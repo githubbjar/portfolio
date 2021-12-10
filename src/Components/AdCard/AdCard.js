@@ -52,11 +52,10 @@ export default function AdCard() {
         <Card>
             <Card.Img variant="top" src={ftAd} onClick={handleShow} />
             <Card.Body>
-                <Card.Title>::: Print Ads &amp; Posters</Card.Title>
+                <Card.Title>Ads &amp; Posters</Card.Title>
                 <Card.Text>
                 Concept / Art / Layout 
                 </Card.Text>
-                <Button variant="secondary" onClick={handleShow}>Slideshow</Button>
 
                 <Modal show={show} onHide={handleClose}>
                     <Modal.Body>

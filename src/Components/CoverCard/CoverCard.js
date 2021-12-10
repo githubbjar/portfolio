@@ -64,11 +64,10 @@ export default function CoverCard() {
         <Card>
             <Card.Img variant="top" src={SV56} onClick={handleShow}/>
             <Card.Body>
-                <Card.Title>::: Magazine Covers</Card.Title>
+                <Card.Title>Covers</Card.Title>
                 <Card.Text>
                 Concept / Design / Content 
                 </Card.Text>
-                <Button variant="secondary" onClick={handleShow}>Slideshow</Button>
 
                 <Modal show={show} onHide={handleClose}>
                     <Modal.Body>
