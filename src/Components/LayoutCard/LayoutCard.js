@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
 import './LayoutCard.css';
-
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Carousel from 'react-bootstrap/Carousel';
-
 import portfolioPieces from '../App/portfolio-data';
-
 import metamorphosis from './layouts_metamorphosis.jpg';
 import epic from './layouts_epic-struggle.jpg';
 import home from './layouts_no-place-like-home.jpg';
@@ -53,7 +49,7 @@ export default function LayoutCard() {
         <Card>
             <Card.Img variant="top" src={home} onClick={handleShow} />
             <Card.Body>
-                <Card.Title>Spreads</Card.Title>
+                <Card.Title>Spreads &amp; Mailers</Card.Title>
                 <Card.Text>
                 Layout / Concept / Design 
                 </Card.Text>

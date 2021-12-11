@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import './AdCard.css';
+import './WebCard.css';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Carousel from 'react-bootstrap/Carousel';
 import portfolioPieces from '../App/portfolio-data';
@@ -13,7 +12,7 @@ import bird from './folk-fest-2019.jpg';
 
 
 
-export default function AdCard() {
+export default function WebCard() {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -52,9 +51,9 @@ export default function AdCard() {
         <Card>
             <Card.Img variant="top" src={ftAd} onClick={handleShow} />
             <Card.Body>
-                <Card.Title>Ads &amp; Posters</Card.Title>
+                <Card.Title>Web Development</Card.Title>
                 <Card.Text>
-                Concept / Art / Layout 
+                    Code / Design  
                 </Card.Text>
 
                 <Modal show={show} onHide={handleClose}>

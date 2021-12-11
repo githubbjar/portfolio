@@ -1,110 +1,88 @@
 import React, { useState } from 'react';
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
 import './App.css';
-import CoverCard from '../CoverCard/CoverCard';
-import MyText from '../MyText/MyText';
-import AdCard from '../AdCard/AdCard';
-import LayoutCard from '../LayoutCard/LayoutCard';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import MyDropdown from '../MyDropdown/MyDropdown';
+import CoverCard from '../CoverCard/CoverCard';
+import WebCard from '../WebCard/WebCard';
+import LayoutCard from '../LayoutCard/LayoutCard';
+import Footer from '../Footer/Footer';
 
 function App() {
 
   //https://upmostly.com/tutorials/react-onhover-event-handling-with-examples
-  //Breakthrough. Used the above and wrapped my cards in a div, instead of using the button.
+  //Breakthrough. Used the above and wrapped my cards in a div, instead of using the button from the example.
   //Wasted a lot of time trying to figure out how to pass hover state from the other components. 
   //This method kept it all in THIS component.
-  const [isShown, setIsShown] = useState(false);
-  const [isShown2, setIsShown2] = useState(false);
-  const [isShown3, setIsShown3] = useState(false);
+  const [showCovers, setShowCovers] = useState(false);
+  const [showLayouts, setShowLayouts] = useState(false);
+  const [showWeb, setShowWeb] = useState(false);
+
+  let welcomePane = 
+      <>
+        <hr />
+        <h1>Welcome Pane</h1>
+        <p>Rock you like a hurricane.</p>
+      </>;
+  if (showCovers) {
+    welcomePane = 
+    <>
+    <hr />
+    <h1>These are my covers.</h1>
+    <p>I've done hundreds of 'em.</p>
+    </>
+  };
+  if (showLayouts) {
+    welcomePane = 
+    <>
+    <hr />
+      <h1>These are my spreads.</h1>
+      <p>In the thousands.</p>
+    </>
+  }
+  if (showWeb) {
+    welcomePane = 
+    <>
+    <hr />
+          <h1>These are my web campaigns.</h1>
+          <p>I also like to do these sorts of projects!</p>
+    </>
+  }
 
   return (
     <>
-    <Navbar bg="light" variant="light">
-        <Container>
-          <Navbar.Brand href="#home">Jerry Janquart / Portfolio</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="https://github.com/githubbjar/portfolio">Github</Nav.Link>
-            <Nav.Link href="https://www.linkedin.com/in/jerry-janquart-67aa608/">LinkedIn</Nav.Link>
-            <Nav.Link href="">Contact</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-      
-      
-    
+    <MyDropdown />
     <div className="app-wrapper">
     <Container>
       <Row>
+        <Col><div className="mytext-wrapper">{welcomePane}</div></Col>
         <Col>
-        
-        <div>
-      
-
-      {isShown && (
-        <div>
-          <hr />
-          <h1>These are my covers.</h1>
-          <p>I've done hundreds of 'em.</p>
-        </div>
-      )}
-
-      {isShown2 && (
-        <div>
-          <hr />
-          <h1>These are my spreads.</h1>
-          <p>In the thousands.</p>
-        </div>
-      )}
-
-      {isShown3 && (
-        <div>
-          <hr />
-          <h1>These are my ads &amp; posters.</h1>
-          <p>I also like to do these sorts of projects!</p>
-        </div>
-      )}
-      </div>
+          <div onMouseEnter={() => setShowCovers(true)} onMouseLeave={() => setShowCovers(false)}>
+            <WebCard />
+          </div>
         </Col>
         <Col>
-          <div
-            onMouseEnter={() => setIsShown(true)}
-            onMouseLeave={() => setIsShown(false)}
-          >
-          <CoverCard />
+          <div onMouseEnter={() => setShowLayouts(true)} onMouseLeave={() => setShowLayouts(false)}>
+            <CoverCard />
           </div>
         </Col>
 
-
         <Col>
-          <div
-            onMouseEnter={() => setIsShown2(true)}
-            onMouseLeave={() => setIsShown2(false)}
-          >
+          <div onMouseEnter={() => setShowWeb(true)} onMouseLeave={() => setShowWeb(false)}>
             <LayoutCard />
           </div>
         </Col>
-
-        <Col>
-        <div
-            onMouseEnter={() => setIsShown3(true)}
-            onMouseLeave={() => setIsShown3(false)}
-          >
-          <AdCard />
-          </div>
-        </Col>
       </Row>
     </Container>
-    <Container>
-      <Row>
-        <Col></Col>
-      </Row>
-    </Container>
+    <Footer />
     </div>
-  </> 
+
+    
+   </>
   )
 }
 export default App;

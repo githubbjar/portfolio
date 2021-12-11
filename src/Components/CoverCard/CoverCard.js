@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import './CoverCard.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import SV56 from '../Covers/SV56_cover.jpg';
-import SV56pdf from './download_sv56.pdf';
-import SV59 from '../Covers/sv59Cover.jpg';
-import SV59pdf from './pdf_tragic.pdf';
-import SV55 from '../Covers/SV55_Cover.jpg';
-import SV55pdf from './pdf_epic.pdf';
-import TS325 from '../Covers/bigcover-32-05.jpg';
-import TS325pdf from './pdf_pietas.pdf';
-import TS344 from '../Covers/bigcover-34-04.jpg';
-import TS344pdf from './pdf_dante.pdf';
+import SV56 from './covers/SV56_cover.jpg';
+import SV56pdf from './pdfs/download_sv56.pdf';
+import SV59 from './covers/sv59Cover.jpg';
+import SV59pdf from './pdfs/pdf_tragic.pdf';
+import SV55 from './covers/SV55_Cover.jpg';
+import SV55pdf from './pdfs/pdf_epic.pdf';
+import TS325 from './covers/bigcover-32-05.jpg';
+import TS325pdf from './pdfs/pdf_pietas.pdf';
+import TS344 from './covers/bigcover-34-04.jpg';
+import TS344pdf from './pdfs/pdf_dante.pdf';
 import Modal from 'react-bootstrap/Modal';
 import Carousel from 'react-bootstrap/Carousel';
 import portfolioPieces from '../App/portfolio-data';
@@ -72,7 +72,7 @@ export default function CoverCard() {
         <Card>
             <Card.Img variant="top" src={SV56} onClick={handleShow} />
             <Card.Body>
-                <Card.Title>Covers</Card.Title>
+                <Card.Title>Covers &amp; Ads</Card.Title>
                 <Card.Text>
                 Concept / Design / Content 
                 </Card.Text>
