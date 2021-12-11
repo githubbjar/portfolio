@@ -29,6 +29,8 @@ const layout4 = new portfolioPiece(13, "Layout", "Looking for a Date", "Fall 202
 const layout5 = new portfolioPiece(14, "Layout", "Bits at the Bottom", "Spring 2020", "Salvo");
 
 
+
+
 portfolioPieces.push(cover1);
 portfolioPieces.push(cover2);
 portfolioPieces.push(cover3);

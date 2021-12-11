@@ -20,6 +20,7 @@ import portfolioPieces from '../App/portfolio-data';
 
 
 export default function CoverCard() {
+
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -49,20 +50,27 @@ export default function CoverCard() {
         };
         return (
             <>
-                <p text-align="center"><em>{portfolioPieces[slideIndex].org}</em> {portfolioPieces[slideIndex].category}&#8212;{portfolioPieces[slideIndex].title}, {portfolioPieces[slideIndex].year} <a className="pdf" href={download}> PDF </a></p>
+                <p text-align="center"><em>{portfolioPieces[slideIndex].org}</em> {portfolioPieces[slideIndex].category}&#8212;{portfolioPieces[slideIndex].title}, {portfolioPieces[slideIndex].year} </p>
                 <img
                     key={portfolioPieces[slideIndex].number}
                     className="d-block w-100"
                     src={imgThumb}
                     alt={portfolioPieces[slideIndex].number}
                 />
+                <Carousel.Caption>
+                    <Button variant="secondary" size="sm" href={download}>
+                        View PDF 
+                    </Button>
+                </Carousel.Caption>
             </>
         )
     }
+
+    
     
     return (
         <Card>
-            <Card.Img variant="top" src={SV56} onClick={handleShow}/>
+            <Card.Img variant="top" src={SV56} onClick={handleShow} />
             <Card.Body>
                 <Card.Title>Covers</Card.Title>
                 <Card.Text>
@@ -92,6 +100,7 @@ export default function CoverCard() {
                 </Modal>
 
             </Card.Body>
+            
         </Card>
     )
 }
