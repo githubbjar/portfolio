@@ -1,0 +1,218 @@
+body {
+    background-color: #CCC;
+    font-family: 'Lora', serif;
+    font-size: 15pt;
+}
+
+.container-fluid {
+    padding: 0px;
+    max-width: 1350px;
+}
+
+img {
+    padding: 0px;
+}
+
+.top-space {
+    background-color: #333;
+    height: 35px;
+}
+
+.bottom-space {
+    background-color: #333;
+    height: 50px;
+}
+
+.navigation {
+    background-color: #FFF;
+    height: 85px;
+}
+
+.row-height {
+    height: 85px;
+    text-align: center;
+    padding-top: 25px;
+    background-color: #bdbdbd;
+    margin: 0px;
+}
+
+.row-height-white {
+    height: 85px;
+    text-align: center;
+    padding-top: 25px;
+    background-color: #FFF;
+    margin: 0px;
+}
+
+.emphasis {
+    font-style: oblique;
+    font-size: 13pt;
+}
+
+.bold {
+    font-weight: bolder;
+    font-size: 25pt;
+}
+
+.underline {
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 5px;
+}
+
+.grid-bg {
+    background-image: url("projects/images/grid.gif");
+    margin: -11px;
+    padding-bottom: 100px;
+}
+
+.translucent-gray-bg {
+    background-image: url("projects/images/gray-20-percent.png");
+}
+.content {
+    height: 2000px;
+}
+
+.shade {
+    background-color: #CCC;
+    opacity: 0.53;
+}
+
+.white {
+    background-color: #FFF;
+    height: 1000px;
+}
+
+.cover {
+    width: 90%;
+    margin: auto;
+    display: block;
+    border: 10px solid #FFF !important;
+}
+
+.coverhomepage {
+    width: 90%;
+    margin: auto;
+    display: block;
+    border: 10px solid #FFF !important;
+    transition: transform .2s;
+}
+
+.coverhomepage:hover {
+    transform: scale(1.1);
+}
+
+.ad {
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+.spread {
+    width: 90%;
+    margin: auto;
+    display: block;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.modal-body {
+    cursor: pointer;
+}
+
+.spread:hover {
+    transform: scale(1.1);
+}
+
+.design-items {
+    padding-top: 25px;
+}
+
+.description-box {
+    background-color: #FFF;
+    width: 90%;
+    margin: auto;
+    padding-top: 18px; 
+    padding-bottom: 2px;
+    margin-bottom: 40px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.project-type {
+    margin-bottom: 2px;
+}
+
+.description {
+    font-size: 13px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+a {
+    text-decoration: none;
+    color:black;    
+}
+
+.descriptive-box {
+    background-color: #FFF;
+    padding: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    margin-top: 90px;
+    padding-top: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+
+.descriptive-box p {
+    font-size: 17px;
+    line-height: 30px;
+}
+
+li {
+    font-size: 17px;
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+  }
+  
+  ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #22314e; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+hr {
+    margin-bottom: 30px;
+}
+
+img.homepage-logo {
+    width: 400px;
+    margin: auto;
+    display: block;
+}
+
+.button-bar {
+    padding-top: 150px; 
+    padding-bottom: 11px;
+}
+
+.dropcap {
+    float: left;
+    font-size: 4em;
+    text-align: center;
+    margin-right: 5px;
+    margin-top: 12px;
+  }
