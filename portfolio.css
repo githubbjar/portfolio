@@ -216,3 +216,10 @@ img.homepage-logo {
     margin-right: 5px;
     margin-top: 12px;
   }
+
+a.github {
+    text-decoration: none;
+    color: #fff;
+    font-size: small;
+    padding-top: 8px;
+}
