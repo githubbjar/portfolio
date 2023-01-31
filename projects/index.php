@@ -1,5 +1,5 @@
 <!--The Projects-->
-<?php include 'projects.php'; ?>
+<?php include '../functions.php'; ?>
 
 <!doctype html>
 <html lang="en">
