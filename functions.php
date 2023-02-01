@@ -22,6 +22,7 @@
         $project = $params['project'];
     };
 
+    $spot = $params['project']-1;
     $org = $params['org'];
     $backOne = $project-1;
     $forwardOne = $project+1;
@@ -32,6 +33,8 @@
     //**********THUMBS UP**********\\
     //Project Class
     class Project {
+    
+        
         public $description;
         public $projecttype;
         public $imagerootfolder;
@@ -42,6 +45,8 @@
         public $example3;
         public $example4;
         public $projectnumber;
+    
+        
     
         function __construct($description, $projecttype, $imagerootfolder, $cover1, $cover2, $example1, $example2, $example3, $example4, $projectnumber) {
         $this->description = $description;
@@ -134,15 +139,113 @@
 
     //**********THUMBS UP**********\\
     //MAKE AN ARRAY OF ALL PROJECTS 1-25-23
+
+
+
+
+    
+
+
+    class FullProject {
+
+        public $description;
+        public $projecttype;
+        public $imagerootfolder;
+        public $cover1;
+        public $cover2;
+        public $example1;
+        public $example1pagecount;
+        public $example2;
+        public $example2pagecount;
+        public $example3;
+        public $example3pagecount;
+        public $example4;
+        public $example4pagecount;
+        public $projectnumber;
+    
+        
+    
+        function __construct($description, $projecttype, $imagerootfolder, $cover1, $cover2, $example1, $example1pagecount, $example2, $example2pagecount, $example3, $example3pagecount, $example4, $example4pagecount, $projectnumber) {
+        $this->description = $description;
+        $this->projecttype = $projecttype;
+        $this->imagerootfolder = $imagerootfolder;
+        $this->cover1 = $cover1;
+        $this->cover2 = $cover2;
+        $this->example1 = $example1;
+        $this->example1pagecount = $example1pagecount;
+        $this->example2 = $example2;
+        $this->example2pagecount = $example2pagecount;
+        $this->example3 = $example3;
+        $this->example3pagecount = $example3pagecount;
+        $this->example4 = $example4;
+        $this->example4pagecount = $example4pagecount;
+        $this->projectnumber = $projectnumber;
+        }
+        function get_description() {
+        return $this->description;
+        }
+        function get_projecttype() {
+        return $this->projecttype;
+        }
+        function get_imagerootfolder() {
+            return $this->imagerootfolder;
+        }
+        function get_cover1() {
+            return $this->cover1;
+        }
+        function get_cover2() {
+            return $this->cover2;
+        }
+        function get_example1() {
+            return $this->example1;
+        }
+        function get_example1pagecount() {
+            return $this->example1pagecount;
+        }
+        function get_example2() {
+            return $this->example2;
+        }
+        function get_example2pagecount() {
+            return $this->example2pagecount;
+        }
+        function get_example3() {
+            return $this->example3;
+        }
+        function get_example3pagecount() {
+            return $this->example3pagecount;
+        }
+        function get_example4() {
+            return $this->example4;
+        }
+        function get_example4pagecount() {
+            return $this->example4pagecount;
+        }
+        function get_projectnumber() {
+            return $this->projectnumber;
+        }
+    }
+
+  
+
+
+
+
+
+
+
+
+
+
+
     
     $allProjects = array();
     
-    $allProjects[0] = new Project("#60 / Spring '22 / 64 pages", "<em>Salvo</em> magazine", "images/sv60/", "cover.jpg", "blog-ad.jpg", "what-the-wartortle", "sun-in-a-million", "i-ramona", "i-porn", "1");
-    $allProjects[1] = new Project("#59 / Winter '21 / 64 pages", "<em>Salvo</em> magazine", "images/sv59/", "cover.jpg", "mag-ad.jpg", "the-red-sky-paradox", "crt-doublespeak", "after-tragedy", "no-place-like-home", "2");
-    $allProjects[2] = new Project("#56 / Spring '21 / 64 pages", "<em>Salvo</em> magazine", "images/sv56/", "cover.jpg", "mag-ad.jpg", "our-search-for-meaninglessness", "scientific-conversations", "in-defense-of-the-ancients", "retaking-delight", "3");
-    $allProjects[3] = new Project("#47 / Winter '18 / 64 pages", "<em>Salvo</em> magazine", "images/sv47/", "cover.jpg", "blog-ad.jpg", "todays-teen-girls", "seeing-stars", "dreadful-and-designed", "moral-law-argument-2", "4");
-    $allProjects[4] = new Project("#54 / Fall '20 / 64 pages", "<em>Salvo</em> magazine", "images/sv54/", "cover.jpg", "mag-ad.jpg", "the-grandest-program", "set-for-life", "families-and-the-economy", "psycho-babble", "5");
-    $allProjects[5] = new Project("#49 / Summer '19 / 64 pages", "<em>Salvo</em> magazine", "images/sv49/", "cover.jpg", "mag-ad.jpg", "far-and-away-above-average", "dramatic-direction", "overprotected", "what-the-bleep", "6");
+    $allProjects[0] = new FullProject("#60 / Spring '22 / 64 pages", "<em>Salvo</em> magazine", "images/sv60/", "cover.jpg", "blog-ad.jpg", "what-the-wartortle", 4, "sun-in-a-million", 4, "i-ramona", 4, "i-porn", 2, "1");
+    $allProjects[1] = new FullProject("#59 / Winter '21 / 64 pages", "<em>Salvo</em> magazine", "images/sv59/", "cover.jpg", "mag-ad.jpg", "the-red-sky-paradox", 4, "crt-doublespeak", 4, "after-tragedy", 5, "no-place-like-home", 2, "2");
+    $allProjects[2] = new FullProject("#56 / Spring '21 / 64 pages", "<em>Salvo</em> magazine", "images/sv56/", "cover.jpg", "mag-ad.jpg", "our-search-for-meaninglessness", 4, "scientific-conversations", 4, "in-defense-of-the-ancients", 4, "retaking-delight", 2, "3");
+    $allProjects[3] = new FullProject("#47 / Winter '18 / 64 pages", "<em>Salvo</em> magazine", "images/sv47/", "cover.jpg", "blog-ad.jpg", "todays-teen-girls", 5, "seeing-stars", 4, "dreadful-and-designed", 4,  "moral-law-argument-2", 3, "4");
+    $allProjects[4] = new FullProject("#54 / Fall '20 / 64 pages", "<em>Salvo</em> magazine", "images/sv54/", "cover.jpg", "mag-ad.jpg", "the-grandest-program", 4, "set-for-life", 4, "families-and-the-economy", 6, "psycho-babble", 2, "5");
+    $allProjects[5] = new FullProject("#49 / Summer '19 / 64 pages", "<em>Salvo</em> magazine", "images/sv49/", "cover.jpg", "mag-ad.jpg", "far-and-away-above-average", 5, "dramatic-direction", 4, "overprotected", 4, "what-the-bleep", 3, "6");
     $allProjects[6] = new Project("Nov/Dec '22 / 64 pages", "<em>Touchstone</em> magazine", "images/ts356/", "cover.jpg", "cal-ad.jpg", "of-sages-and-prophets", "old-school-beauty", "a-thousand-words", "commonplaces", "7");
     $allProjects[7] = new Project("Jul/Aug '22 / 56 pages", "<em>Touchstone</em> magazine", "images/ts354/", "cover.jpg", "conf-ad.jpg", "the-sacred-cosmos", "dominion", "a-thousand-words", "commonplaces", "8");
     $allProjects[8] = new Project("Nov/Dec '22 / 56 pages", "<em>Touchstone</em> magazine", "images/ts346/", "cover.jpg", "cal-ad.jpg", "st-nicholas", "john-paul-the-scribe", "a-thousand-words", "commonplaces", "9");
@@ -155,7 +258,6 @@
     $allProjects[15] = new Project("Newsletter / 16 pages", "Biretta Books", "images/bviasacra/", "cover.jpg", "back-cover.jpg", "first-group", "second-group", "third-group", "fourth-group", "16");
     $allProjects[16] = new Project("Program / 8 pages", "Biretta Books", "images/bmozart/", "cover.jpg", "back-cover.jpg", "first-group", "second-group", "third-group", "fourth-group", "17");
     $allProjects[17] = new Project("Ordo '22 book / 152 pages", "Biretta Books", "images/bordo22/", "cover.jpg", "back-cover.jpg", "first-group", "second-group", "third-group", "fourth-group", "18");
-
 
 
 
@@ -313,11 +415,33 @@
 
 
 
-   
+   //Vars for use with object array of projects
+   $getImageRootFolder = $allProjects[$spot]->get_imagerootfolder();
+   $getCover1 = $allProjects[$spot]->get_cover1();
+   $getCover2 = $allProjects[$spot]->get_cover2();
+   $getProjectType = $allProjects[$spot]->get_projecttype();
+   $getDescription = $allProjects[$spot]->get_description();
+
+   $getExample1 = $allProjects[$spot]->get_example1();
+   $getExample1PageCount = $allProjects[$spot]->get_example1pagecount();
+   $getExample2 = $allProjects[$spot]->get_example2();
+   $getExample2PageCount = $allProjects[$spot]->get_example2pagecount();
+   $getExample3 = $allProjects[$spot]->get_example3();
+   $getExample3PageCount = $allProjects[$spot]->get_example3pagecount();
+   $getExample4 = $allProjects[$spot]->get_example4();
+   $getExample4PageCount = $allProjects[$spot]->get_example4pagecount();
 
 
-
-
+   //display example based on page count
+   function displayExample($pageCount,$exampleNumber,$root) {
+        if ($pageCount == 4) {
+            exampleModal_TwoSpreads($exampleNumber,$root); 
+        } elseif ($pageCount == 2) {
+            exampleModal_OneSpread($exampleNumber,$root);
+        } else {
+            echo "<center><br />[ not displayed---no function for this page count. ]<br /><br /><br /></center>";
+        };
+    }
 
 
 
