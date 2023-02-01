@@ -28,6 +28,15 @@
     $forwardOne = $project+1;
 
 
+    /*SIZES OF IMAGES
+
+    spread jpg 1900 x 1254
+    png comp 1524 x 1025
+     
+
+    */
+
+
 
 
     //**********THUMBS UP**********\\
@@ -241,9 +250,9 @@
     $allProjects = array();
     
     $allProjects[0] = new FullProject("#60 / Spring '22 / 64 pages", "<em>Salvo</em> magazine", "images/sv60/", "cover.jpg", "blog-ad.jpg", "what-the-wartortle", 4, "sun-in-a-million", 4, "i-ramona", 4, "i-porn", 2, "1");
-    $allProjects[1] = new FullProject("#59 / Winter '21 / 64 pages", "<em>Salvo</em> magazine", "images/sv59/", "cover.jpg", "mag-ad.jpg", "the-red-sky-paradox", 4, "crt-doublespeak", 4, "after-tragedy", 5, "no-place-like-home", 2, "2");
+    $allProjects[1] = new FullProject("#59 / Winter '21 / 64 pages", "<em>Salvo</em> magazine", "images/sv59/", "cover.jpg", "mag-ad.jpg", "the-red-sky-paradox", 4, "crt-doublespeak", 6, "after-tragedy", 5, "no-place-like-home", 2, "2");
     $allProjects[2] = new FullProject("#56 / Spring '21 / 64 pages", "<em>Salvo</em> magazine", "images/sv56/", "cover.jpg", "mag-ad.jpg", "our-search-for-meaninglessness", 4, "scientific-conversations", 4, "in-defense-of-the-ancients", 4, "retaking-delight", 2, "3");
-    $allProjects[3] = new FullProject("#47 / Winter '18 / 64 pages", "<em>Salvo</em> magazine", "images/sv47/", "cover.jpg", "blog-ad.jpg", "todays-teen-girls", 5, "seeing-stars", 4, "dreadful-and-designed", 4,  "moral-law-argument-2", 3, "4");
+    $allProjects[3] = new FullProject("#47 / Winter '18 / 64 pages", "<em>Salvo</em> magazine", "images/sv47/", "cover.jpg", "blog-ad.jpg", "todays-teen-girls", 5, "seeing-stars", 4, "dreadful-and-designed", 4,  "moral-law-argument-2", 4, "4");
     $allProjects[4] = new FullProject("#54 / Fall '20 / 64 pages", "<em>Salvo</em> magazine", "images/sv54/", "cover.jpg", "mag-ad.jpg", "the-grandest-program", 4, "set-for-life", 4, "families-and-the-economy", 6, "psycho-babble", 2, "5");
     $allProjects[5] = new FullProject("#49 / Summer '19 / 64 pages", "<em>Salvo</em> magazine", "images/sv49/", "cover.jpg", "mag-ad.jpg", "far-and-away-above-average", 5, "dramatic-direction", 4, "overprotected", 4, "what-the-bleep", 3, "6");
     $allProjects[6] = new Project("Nov/Dec '22 / 64 pages", "<em>Touchstone</em> magazine", "images/ts356/", "cover.jpg", "cal-ad.jpg", "of-sages-and-prophets", "old-school-beauty", "a-thousand-words", "commonplaces", "7");
@@ -432,10 +441,14 @@
    $getExample4PageCount = $allProjects[$spot]->get_example4pagecount();
 
 
-   //display example based on page count
+   //display example based on page count   
    function displayExample($pageCount,$exampleNumber,$root) {
-        if ($pageCount == 4) {
-            exampleModal_TwoSpreads($exampleNumber,$root); 
+        if ($pageCount == 6) {
+            exampleModal_ThreeSpreads($exampleNumber,$root); 
+        } elseif ($pageCount == 5) {
+            exampleModal_TwoSpreadsPlus1($exampleNumber,$root);
+        } elseif ($pageCount == 4) {
+            exampleModal_TwoSpreads($exampleNumber,$root);
         } elseif ($pageCount == 2) {
             exampleModal_OneSpread($exampleNumber,$root);
         } else {
@@ -490,6 +503,95 @@
                         <div class="modal-header"></div>
                         <div class="modal-body">
                         <a data-bs-dismiss="modal"><img src="'.$path.$examplenumber.'2.jpg" width="100%" /></a>
+                        </div>
+                        <div class="modal-footer"></div>
+                    </div>
+                    </div>
+                </div>';
+    } 
+
+
+
+    function exampleModal_TwoSpreadsPlus1($examplenumber, $path) {
+        echo '
+        
+                <img src="'.$path.$examplenumber.'.png" class="spread" data-bs-toggle="modal" data-bs-target="#'.$examplenumber.'"/>
+
+                <div class="modal fade" id="'.$examplenumber.'" aria-hidden="true" aria-labelledby="'.$examplenumber.'" tabindex="-1">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header"></div>
+                        <div class="modal-body">
+                            <img src="'.$path.$examplenumber.'1.jpg" width="100%" data-bs-target="#'.$examplenumber.'2" data-bs-toggle="modal" data-bs-dismiss="modal"/>
+                        </div>
+                        <div class="modal-footer"></div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="'.$examplenumber.'2" aria-hidden="true" aria-labelledby="'.$examplenumber.'2" tabindex="-1">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header"></div>
+                        <div class="modal-body">
+                            <img src="'.$path.$examplenumber.'2.jpg" width="100%" data-bs-target="#'.$examplenumber.'3" data-bs-toggle="modal" data-bs-dismiss="modal"/>
+                        </div>
+                        <div class="modal-footer"></div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="'.$examplenumber.'3" aria-hidden="true" aria-labelledby="'.$examplenumber.'3" tabindex="-1">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header"></div>
+                        <div class="modal-body">
+                        <a data-bs-dismiss="modal"><img src="'.$path.$examplenumber.'3.jpg" width="50%" /></a>
+                        </div>
+                        <div class="modal-footer"></div>
+                    </div>
+                    </div>
+                </div>';
+    } 
+
+
+
+
+    function exampleModal_ThreeSpreads($examplenumber, $path) {
+        echo '
+        
+                <img src="'.$path.$examplenumber.'.png" class="spread" data-bs-toggle="modal" data-bs-target="#'.$examplenumber.'"/>
+
+                <div class="modal fade" id="'.$examplenumber.'" aria-hidden="true" aria-labelledby="'.$examplenumber.'" tabindex="-1">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header"></div>
+                        <div class="modal-body">
+                            <img src="'.$path.$examplenumber.'1.jpg" width="100%" data-bs-target="#'.$examplenumber.'2" data-bs-toggle="modal" data-bs-dismiss="modal"/>
+                        </div>
+                        <div class="modal-footer"></div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="'.$examplenumber.'2" aria-hidden="true" aria-labelledby="'.$examplenumber.'2" tabindex="-1">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header"></div>
+                        <div class="modal-body">
+                            <img src="'.$path.$examplenumber.'2.jpg" width="100%" data-bs-target="#'.$examplenumber.'3" data-bs-toggle="modal" data-bs-dismiss="modal"/>
+                        </div>
+                        <div class="modal-footer"></div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="'.$examplenumber.'3" aria-hidden="true" aria-labelledby="'.$examplenumber.'3" tabindex="-1">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header"></div>
+                        <div class="modal-body">
+                        <a data-bs-dismiss="modal"><img src="'.$path.$examplenumber.'3.jpg" width="100%" /></a>
                         </div>
                         <div class="modal-footer"></div>
                     </div>
