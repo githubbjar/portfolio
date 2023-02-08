@@ -85,42 +85,14 @@
 
                         if (!$org) {
                             //this doesnt use array need to update
-                            thumbnailHomepage($project1); 
-                            thumbnailHomepage($project7);  
-                            thumbnailHomepage($project13);
+                            thumbnailHomepage($allProjects[0]); 
+                            thumbnailHomepage($allProjects[6]);  
+                            thumbnailHomepage($allProjects[12]);
                         } else {
                             //this uses array 
                             outputThumbnails($allProjects,$org);
                         };
 
-                        /*if ($org == "salvo") {
-                            
-                        } elseif ($org == "touchstone") {
-                            thumbnail($project7);
-                            thumbnail($project8);
-                            thumbnail($project9);
-                            thumbnail($project10);
-                            thumbnail($project11);
-                            thumbnail($project12);
-                        } elseif ($org == "biretta") {
-                            thumbnail($project13);
-                            thumbnail($project14);
-                            thumbnail($project15);
-                            thumbnail($project16);
-                            thumbnail($project17);
-                            thumbnail($project18);
-                        } else {
-                            thumbnailHomepage($project1); 
-                            thumbnailHomepage($project7);  
-                            thumbnailHomepage($project13); 
-                        }*/
-                        //TOUCHSTONE
-
-                        //PMA
-
-                        //SHAW
-
-                        //BIRETTA
 
                         ?>
 

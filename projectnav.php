@@ -3,7 +3,7 @@
                         
                         <!--PREVIOUS BUTTON-->
                         <div class="col-sm-1 text-center">
-                            <a class="btn btn-light btn-sm" href="https://www.jerryjanquart.com/portfolio/projects/?project=<?php 
+                            <a class="btn btn-light btn-sm" href="https://www.jerryjanquart.com/portfolio/projects/number.php?project=<?php 
                             
                                 if ($project == 1) {
                                     echo '18';
@@ -18,22 +18,22 @@
                         <div class="col-sm-10 text-center">
                             <a class="btn btn-secondary btn-sm" href="https://www.jerryjanquart.com/portfolio/?org=<?php 
                             
-                                if ($projecttype == "<em>Salvo</em> magazine") {
+                                if ($getProjectType == "<em>Salvo</em> magazine") {
                                     echo 'salvo';
-                                } elseif ($projecttype == "<em>Touchstone</em> magazine") {
+                                } elseif ($getProjectType == "<em>Touchstone</em> magazine") {
                                     echo 'touchstone';
-                                } elseif ($projecttype == "Biretta Books") {
+                                } elseif ($getProjectType == "Biretta Books") {
                                     echo 'biretta';
                                 }
                             
-                            ?>"><?php echo $projecttype; 
+                            ?>"><?php echo $getProjectType; 
                             ?>
                             </a>
                         </div>
 
                         <!--NEXT BUTTON-->
                         <div class="col-sm-1 text-center">
-                            <a class="btn btn-light btn-sm" href="https://www.jerryjanquart.com/portfolio/projects/?project=<?php 
+                            <a class="btn btn-light btn-sm" href="https://www.jerryjanquart.com/portfolio/projects/number.php?project=<?php 
                             
                             if ($project == 18) {
                                 echo '1';

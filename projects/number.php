@@ -1,5 +1,21 @@
 <!--The Projects-->
-<?php include '../functions.php'; ?>
+<?php include '../functions.php'; 
+$getImageRootFolder = $allProjects[$spot]->get_imagerootfolder();
+$getCover1 = $allProjects[$spot]->get_cover1();
+$getCover2 = $allProjects[$spot]->get_cover2();
+$getProjectType = $allProjects[$spot]->get_projecttype();
+$getDescription = $allProjects[$spot]->get_description();
+
+$getExample1 = $allProjects[$spot]->get_example1();
+$getExample1PageCount = $allProjects[$spot]->get_example1pagecount();
+$getExample2 = $allProjects[$spot]->get_example2();
+$getExample2PageCount = $allProjects[$spot]->get_example2pagecount();
+$getExample3 = $allProjects[$spot]->get_example3();
+$getExample3PageCount = $allProjects[$spot]->get_example3pagecount();
+$getExample4 = $allProjects[$spot]->get_example4();
+$getExample4PageCount = $allProjects[$spot]->get_example4pagecount();
+
+?>
 
 <!doctype html>
 <html lang="en">
@@ -7,7 +23,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jerry Janquart Design Portfolio &#8212; <?php echo $description; ?></title>
+    <title>Jerry Janquart Design Portfolio &#8212; <?php echo $getDescription; ?></title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     
@@ -53,11 +69,13 @@
 
                             <?php 
 
+
                                 displayExample($getExample1PageCount,$getExample1,$getImageRootFolder);
                                 displayExample($getExample2PageCount,$getExample2,$getImageRootFolder);
                                 displayExample($getExample3PageCount,$getExample3,$getImageRootFolder);
-                                displayExample($getExample4PageCount,$getExample4,$getImageRootFolder);
-                            
+                                if ($getExample4PageCount > 0) {
+                                   displayExample($getExample4PageCount,$getExample4,$getImageRootFolder);
+                                };
                             ?>
 
                         </div>
