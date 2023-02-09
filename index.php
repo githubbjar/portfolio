@@ -1,5 +1,13 @@
 <!--The Projects-->
-<?php include 'functions.php'; ?>
+<?php 
+
+    //get functions 
+    include 'functions.php'; 
+
+    //get data
+    include 'data.php';
+
+?>
 
 <!doctype html>
 <html lang="en">

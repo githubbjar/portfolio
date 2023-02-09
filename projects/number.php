@@ -1,19 +1,26 @@
 <!--The Projects-->
-<?php include '../functions.php'; 
-$getImageRootFolder = $allProjects[$spot]->get_imagerootfolder();
-$getCover1 = $allProjects[$spot]->get_cover1();
-$getCover2 = $allProjects[$spot]->get_cover2();
-$getProjectType = $allProjects[$spot]->get_projecttype();
-$getDescription = $allProjects[$spot]->get_description();
+<?php 
 
-$getExample1 = $allProjects[$spot]->get_example1();
-$getExample1PageCount = $allProjects[$spot]->get_example1pagecount();
-$getExample2 = $allProjects[$spot]->get_example2();
-$getExample2PageCount = $allProjects[$spot]->get_example2pagecount();
-$getExample3 = $allProjects[$spot]->get_example3();
-$getExample3PageCount = $allProjects[$spot]->get_example3pagecount();
-$getExample4 = $allProjects[$spot]->get_example4();
-$getExample4PageCount = $allProjects[$spot]->get_example4pagecount();
+    //get functions
+    include '../functions.php'; 
+
+    //get project data
+    include '../data.php';
+
+    //create necessary vars from specific object in the array
+    $getImageRootFolder = $allProjects[$spot]->get_imagerootfolder();
+    $getCover1 = $allProjects[$spot]->get_cover1();
+    $getCover2 = $allProjects[$spot]->get_cover2();
+    $getProjectType = $allProjects[$spot]->get_projecttype();
+    $getDescription = $allProjects[$spot]->get_description();
+    $getExample1 = $allProjects[$spot]->get_example1();
+    $getExample1PageCount = $allProjects[$spot]->get_example1pagecount();
+    $getExample2 = $allProjects[$spot]->get_example2();
+    $getExample2PageCount = $allProjects[$spot]->get_example2pagecount();
+    $getExample3 = $allProjects[$spot]->get_example3();
+    $getExample3PageCount = $allProjects[$spot]->get_example3pagecount();
+    $getExample4 = $allProjects[$spot]->get_example4();
+    $getExample4PageCount = $allProjects[$spot]->get_example4pagecount();
 
 ?>
 
