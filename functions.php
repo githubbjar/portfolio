@@ -59,7 +59,6 @@
         $this->example3pagecount = $example3pagecount;
         $this->example4 = $example4;
         $this->example4pagecount = $example4pagecount;
-        //$this->projectnumber = $projectnumber;
         }
 
         // the methods
