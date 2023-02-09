@@ -87,14 +87,14 @@
     
     //add the projects
     //SALVO
+    $allProjects[] = new FullProject("#49 / Summer '19 / 64 pages", "<em>Salvo</em> magazine", "images/sv49/", "cover.jpg", "mag-ad.jpg", "far-and-away-above-average", 5, "dramatic-direction", 4, "overprotected", 4, "what-the-bleep", 4);
     $allProjects[] = new FullProject("#62 / Fall '22 / 64 pages", "<em>Salvo</em> magazine", "images/sv62/", "cover.jpg", "mag-ad.jpg", "brainiacs", 5, "ground-zero", 4, "stealth-education", 4, "six-billion-tics", 4);
     $allProjects[] = new FullProject("#60 / Spring '22 / 64 pages", "<em>Salvo</em> magazine", "images/sv60/", "cover.jpg", "blog-ad.jpg", "what-the-wartortle", 5, "sun-in-a-million", 4, "i-ramona", 4, "i-porn", 2);
     $allProjects[] = new FullProject("#59 / Winter '21 / 64 pages", "<em>Salvo</em> magazine", "images/sv59/", "cover.jpg", "mag-ad.jpg", "the-red-sky-paradox", 4, "crt-doublespeak", 6, "after-tragedy", 5, "no-place-like-home", 2);
     $allProjects[] = new FullProject("#56 / Spring '21 / 64 pages", "<em>Salvo</em> magazine", "images/sv56/", "cover.jpg", "mag-ad.jpg", "our-search-for-meaninglessness", 4, "scientific-conversations", 4, "in-defense-of-the-ancients", 4, "retaking-delight", 2);
     $allProjects[] = new FullProject("#47 / Winter '18 / 64 pages", "<em>Salvo</em> magazine", "images/sv47/", "cover.jpg", "blog-ad.jpg", "todays-teen-girls", 5, "seeing-stars", 4, "dreadful-and-designed", 4,  "moral-law-argument-2", 4);
     $allProjects[] = new FullProject("#54 / Fall '20 / 64 pages", "<em>Salvo</em> magazine", "images/sv54/", "cover.jpg", "mag-ad.jpg", "the-grandest-program", 4, "set-for-life", 4, "families-and-the-economy", 6, "psycho-babble", 2);
-    $allProjects[] = new FullProject("#49 / Summer '19 / 64 pages", "<em>Salvo</em> magazine", "images/sv49/", "cover.jpg", "mag-ad.jpg", "far-and-away-above-average", 5, "dramatic-direction", 4, "overprotected", 4, "what-the-bleep", 4);
-
+    
     //TOUCHSTONE
     $allProjects[] = new FullProject("Nov/Dec '22 / 64 pages", "<em>Touchstone</em> magazine", "images/ts356/", "cover.jpg", "cal-ad.jpg", "of-sages-and-prophets", 6, "old-school-beauty", 5, "a-thousand-words", 2, "commonplaces", 2);
     $allProjects[] = new FullProject("Jul/Aug '22 / 56 pages", "<em>Touchstone</em> magazine", "images/ts354/", "cover.jpg", "conf-ad.jpg", "the-sacred-cosmos", 6, "dominion", 4, "a-thousand-words", 2, "commonplaces", 2);
