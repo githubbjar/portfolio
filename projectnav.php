@@ -6,7 +6,7 @@
                             <a class="btn btn-light btn-sm" href="https://www.jerryjanquart.com/portfolio/projects/number.php?project=<?php 
                             
                                 if ($project == 1) {
-                                    echo '18';
+                                    echo $numOfProjects;
                                 } else {
                                     echo $backOne; 
                                 };
@@ -35,7 +35,7 @@
                         <div class="col-sm-1 text-center">
                             <a class="btn btn-light btn-sm" href="https://www.jerryjanquart.com/portfolio/projects/number.php?project=<?php 
                             
-                            if ($project == 18) {
+                            if ($project == $numOfProjects) {
                                 echo '1';
                             } else {
                                 echo $forwardOne; 

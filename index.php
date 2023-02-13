@@ -1,11 +1,11 @@
 <!--The Projects-->
 <?php 
 
-    //get functions 
-    include 'functions.php'; 
-
     //get data
     include 'data.php';
+
+    //get functions 
+    include 'functions.php'; 
 
 ?>
 
@@ -93,9 +93,9 @@
 
                         if (!$org) {
                             //this doesnt use array need to update
-                            thumbnailHomepage($allProjects[0]); 
-                            thumbnailHomepage($allProjects[6]);  
-                            thumbnailHomepage($allProjects[12]);
+                            thumbnailHomepage($allProjects[1]); 
+                            thumbnailHomepage($allProjects[12]);  
+                            thumbnailHomepage($allProjects[19]);
                         } else {
                             //this uses array 
                             outputThumbnails($allProjects,$org);
