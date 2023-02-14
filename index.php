@@ -92,7 +92,7 @@
                         <?php
 
                         if (!$org) {
-                            //this doesnt use array need to update
+                            //this uses array
                             thumbnailHomepage($allProjects[1]); 
                             thumbnailHomepage($allProjects[12]);  
                             thumbnailHomepage($allProjects[19]);

@@ -53,7 +53,7 @@
 
 
     //create homepage thumbnails if organization is declared
-    //Using $projects as $project wasn't working in that the code following this function didn't load at all. A google search for this "php foreach for array of objects" showed me the answer by grabbing the $key and $value as seen below. I've kept the code that didn't work below for reference....
+    //Using $projects as $project wasn't working in that the code following this function didn't load at all. A google search for "php foreach for array of objects" showed me the answer by grabbing the $key and $value as seen below.
     //https://stackoverflow.com/questions/13707836/php-foreach-arrays-and-objects
     function outputThumbnails($projects, $organization) {
 
@@ -72,7 +72,7 @@
                     <div class="description-box text-center">
                 
                     <p class="project-type">'.$value->projecttype.'</p>
-                    <p class="description">'.$value->despcription.'</p>
+                    <p class="description">'.$value->description.'</p>
                     <p class="my-role">Art Director</p>
 
                     </div>
@@ -80,55 +80,6 @@
             }
         
         };
-
- /*
-        
-        $numberOfColumns = 3;
-        $bootstrapColWidth = 12 / $numberOfColumns ;
-
-        $arrayChunks = array_chunk($projects, $numberOfColumns);
-        foreach($arrayChunks as $projects) {
-            echo '<div class="row">';
-            foreach($projects as $project) {
-                if ($project->get_projecttype() == $type) {
-                    echo '<div class="col-md-'.$bootstrapColWidth.'">';
-                    
-                    echo '<a href="https://www.jerryjanquart.com/portfolio/projects/number.php?project='.$project->get_projectnumber().'"><img src="projects/'.$project->get_imagerootfolder().$project->get_cover1().'" class="coverhomepage" /></a>
-                    <div class="description-box text-center">
-                    
-                        <p class="project-type">'.$project->get_projecttype().'</p>
-                        <p class="description">'.$project->get_description().'</p>
-                        <p class="my-role">Art Director</p>
-
-                    </div>';
-                };
-                echo '</div>';
-            }
-            echo '</div>';
-        }  
-*/
-       
-        //get organization
-       
-        
-        //output thumbnails and links for each organization
-       /* foreach ($projects as $project)  {
-            if ($project->get_projecttype() == $type) {
-                echo '  <div class="col-md-4">
-                            <a href="https://www.jerryjanquart.com/portfolio/projects/number.php?project='.$project->get_projectnumber().'"><img src="projects/'.$project->get_imagerootfolder().$project->get_cover1().'" class="coverhomepage" /></a>
-                            <div class="description-box text-center">
-                            
-                                <p class="project-type">'.$project->get_projecttype().'</p>
-                                <p class="description">'.$project->get_description().'</p>
-                                <p class="my-role">Art Director</p>
-
-                            </div>
-                        </div>';
-            }
-        };*/
-
-        
-        
     };
 
     
