@@ -113,8 +113,8 @@
     $allProjects[] = new FullProject("Schedule '23 / 16 pages", "Biretta Books", "images/bmusic23/", "cover.jpg", "back-cover.jpg", "first-group", 4, "second-group", 4, "third-group", 2, "fourth-group", 2);
     $allProjects[] = new FullProject("Ordo '23 book / 144 pages", "Biretta Books", "images/bordo23/", "cover.jpg", "back-cover.jpg", "first-group", 4, "second-group", 4, "third-group", 2, "fourth-group", 2);
     $allProjects[] = new FullProject("Newsletter / 16 pages", "Biretta Books", "images/bviasacra/", "cover.jpg", "back-cover.jpg", "first-group", 4, "second-group", 4, "third-group", 2, "fourth-group", 2);
-    $allProjects[] = new FullProject("Program / 8 pages", "Biretta Books", "images/bmozart/", "cover.jpg", "back-cover.jpg", "first-group", 4, "second-group", 4, "third-group", 2, "fourth-group", 0);
-    $allProjects[] = new FullProject("Ordo '22 book / 152 pages", "Biretta Books", "images/bordo22/", "cover.jpg", "back-cover.jpg", "first-group", 4, "second-group", 4, "third-group", 2, "fourth-group", 2);
+    $allProjects[] = new FullProject("Program / 8 pages", "Biretta Books", "images/bmozart/", "cover.jpg", "back-cover.jpg", "first-group", 2, "second-group", 2, "third-group", 2, "fourth-group", 0);
+    $allProjects[] = new FullProject("Ordo '22 book / 152 pages", "Biretta Books", "images/bordo22/", "cover.jpg", "back-cover.jpg", "first-group", 2, "second-group", 2, "third-group", 2, "fourth-group", 0);
 
     //project numbers assigned after the fact to each object in the $allProjects array
     $numOfProjects = count($allProjects);
