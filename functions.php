@@ -15,10 +15,19 @@
     } else {
         $project = $params['project'];
     };
+
+    if (!$params['element']) {
+        $element = 'computer';
+    } else {
+        $element = $params['element'];
+    };
+
     $spot = $params['project']-1;
     $org = $params['org'];
+    
     $backOne = $project-1;
     $forwardOne = $project+1;
+
 
 
     //create thumbnails for homepage if no organization declared

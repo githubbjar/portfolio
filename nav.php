@@ -1,16 +1,48 @@
 <!--Navigation-->
         <div class="container-fluid fixed-top">
         <div class="row top-space"> 
+            <ul>
+                <li><a 
+                        href="https://www.jerryjanquart.com/portfolio" 
+                        <?php  
+                            if (!$org) {
+                                echo 'class="checked"';
+                            };  
+                        ?>
+
+                        >All Projects</a></li>   
+                <li><a 
+                        href="https://www.jerryjanquart.com/portfolio/?org=salvo" 
+                        <?php  
+                            if ($org == 'salvo') {
+                                echo 'class="checked"';
+                            };  
+                        ?>
+
+                        >
+                        
+                        <em>Salvo</em></a></li>
+                <li><a href="https://www.jerryjanquart.com/portfolio/?org=touchstone" <?php  
+                            if ($org == 'touchstone') {
+                                echo 'class="checked"';
+                            };  
+                        ?>><em>Touchstone</em></a></li>
+                <li><a href="https://www.jerryjanquart.com/portfolio/?org=biretta" 
+                <?php  
+                            if ($org == 'biretta') {
+                                echo 'class="checked"';
+                            };  
+                        ?>>Biretta Books</a></li>
+                <li><a href="Janquart_Resume.pdf" target="_blank">Contact</a></li>
             </div>
-            <div class="row navigation text-center align-items-center">
-                <div class="col-md-2 row-height">
-                    <a href="https://www.jerryjanquart.com/portfolio/Janquart_Resume.pdf"><span class="underline">&#x274F; <span class="emphasis">Contact</span></span></a>
+            <div class="row navigation text-center">
+                
+                <div class="col-lg-6">
+                    <img src="logo1.png" class="left-logo" />
                 </div>
-                <div class="col-md-8 row-height-white">
-                    <span class="bold">Jerry Janquart</span> <span class="emphasis">Portfolio</span>
+                <div class="col-lg-6">
+                    <img src="logo2.png" class="right-logo" />
                 </div>
-                <div class="col-md-2 row-height">
-                    <a href="https://www.jerryjanquart.com/portfolio"><span class="underline">&#x2750; <span class="emphasis">Projects</span></span></a>
-                </div>
+                
             </div>
         </div>
