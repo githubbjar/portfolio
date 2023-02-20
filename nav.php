@@ -5,7 +5,7 @@
                 <li><a 
                         href="https://www.jerryjanquart.com/portfolio" 
                         <?php  
-                            if (!$org) {
+                            if (!$org && $noproject) {
                                 echo 'class="checked"';
                             };  
                         ?>
@@ -14,7 +14,7 @@
                 <li><a 
                         href="https://www.jerryjanquart.com/portfolio/?org=salvo" 
                         <?php  
-                            if ($org == 'salvo') {
+                            if ($org == 'salvo' || $salvoproject) {
                                 echo 'class="checked"';
                             };  
                         ?>
@@ -23,13 +23,13 @@
                         
                         <em>Salvo</em></a></li>
                 <li><a href="https://www.jerryjanquart.com/portfolio/?org=touchstone" <?php  
-                            if ($org == 'touchstone') {
+                            if ($org == 'touchstone'  || $touchstoneproject) {
                                 echo 'class="checked"';
                             };  
                         ?>><em>Touchstone</em></a></li>
                 <li><a href="https://www.jerryjanquart.com/portfolio/?org=biretta" 
                 <?php  
-                            if ($org == 'biretta') {
+                            if ($org == 'biretta'  || $birettaproject) {
                                 echo 'class="checked"';
                             };  
                         ?>>Biretta Books</a></li>

@@ -12,9 +12,18 @@
     // set variables based on url
     if (!$params['project']) {
         $project = 1;
+        $noproject = true;
     } else {
         $project = $params['project'];
     };
+
+    if ($project < 13) {
+        $salvoproject = true;
+    } elseif ($project < 19) {
+        $touchstoneproject = true;
+    } else {
+        $birettaproject = true;
+    }
 
     if (!$params['element']) {
         $element = 'computer';
@@ -27,6 +36,7 @@
     
     $backOne = $project-1;
     $forwardOne = $project+1;
+    
 
 
 
