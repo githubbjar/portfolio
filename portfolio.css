@@ -95,11 +95,12 @@ img.right-logo {
 }
 
 .top-space {
-    background-color: #333;
+    background-color: black;
 }
 
 .bottom-space {
-    background-color: #333;
+    background-color: black;
+    
 }
 
 .navigation {
@@ -294,6 +295,7 @@ img.homepage-logo {
 a.github {
     text-decoration: none;
     color: #fff;
-    font-size: small;
-    padding-top: 8px;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 16px;
+    padding: 12px;
 }
