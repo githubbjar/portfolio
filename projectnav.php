@@ -26,7 +26,8 @@
                                     echo 'biretta';
                                 }
                             
-                            ?>"><?php echo $getProjectType; 
+                            ?>">
+                            <?php echo '<strong>'.$getProjectType.'</strong>'; 
                             ?>
                             </a>
                         </div>

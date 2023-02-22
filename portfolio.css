@@ -1,5 +1,5 @@
 body {
-    background-color: #737373;;
+    background-color: #333;
     font-family: 'Lora', serif;
     font-size: 15pt;
 }
@@ -11,6 +11,8 @@ body {
 ul {
     margin-bottom: 5px;
 }
+
+
 
 li, li a {
     display: inline;
@@ -27,7 +29,7 @@ li a.checked {
 
 .container-fluid {
     padding: 0px;
-    max-width: 1300px;
+    max-width: 1100px;
 
 }
 h1 {
@@ -35,6 +37,8 @@ h1 {
     padding-left: 20%;
     padding-right: 20%;
     text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 49px;
 }
 
 h2 {
@@ -42,11 +46,28 @@ h2 {
     font-family: 'Nanum Gothic Coding', monospace;
     padding-left: 25%;
     padding-right: 20%;
-    line-height: 36px;
+    line-height: 39px;
 }
 
 .btn {
     border-radius: 0px;
+}
+
+#online-item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height:500px;
+    text-align: center;
+    background-image: url(computer_images/computer.jpg);
+}
+
+.contact {
+    height: 300px;
+    background-color: white;
 }
 
 .online-item a, .online-item span {
@@ -223,7 +244,6 @@ img.right-logo {
 }
 
 .description-box {
-    background-color: #FFF;
     width: 90%;
     margin: auto;
     padding-top: 18px; 
@@ -235,12 +255,15 @@ img.right-logo {
 
 .project-type {
     margin-bottom: 2px;
+    display: none;
 }
 
 .description {
-    font-size: 13px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Nanum Gothic Coding', monospace;
+
 }
 
 a {
@@ -256,7 +279,9 @@ a.btn {
     font-family: 'Nanum Gothic Coding', monospace;
 }  
 
-
+.my-role {
+    display: none;
+}
 .descriptive-box p {
     font-size: 17px;
     line-height: 30px;

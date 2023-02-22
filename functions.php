@@ -10,21 +10,9 @@
     parse_str($url_components['query'], $params);
     
     // set variables based on url
-    if (!$params['project']) {
-        $project = 1;
-        $noproject = true;
-    } else {
-        $project = $params['project'];
-    };
-
-    if ($project < 13) {
-        $salvoproject = true;
-    } elseif ($project < 19) {
-        $touchstoneproject = true;
-    } else {
-        $birettaproject = true;
-    }
-
+    
+    $project = $params['project'];
+    
     if (!$params['element']) {
         $element = 'computer';
     } else {
@@ -38,7 +26,30 @@
     $forwardOne = $project+1;
     
 
+    function homepageGreeting($orgVar) {
+        if (!$orgVar) {
+            echo'
+            <h1>Graphic Designer &amp; Web Developer </p>
+            <h2>who has been partnering with magazine and book publishers for 17 years. In that time I have single-handedly brought over 150 issues through the full design and production process from manuscript to layout to print to web.</h2>';
+        } elseif ($orgVar == "salvo") {
+            echo '  <h1><em>Salvo</em> magazine</h1>
+                    <h2>A quarterly, 64 page color magazine aimed at young adults. I have designed every issue since the beginning&#8212;the summer of 2007. This includes website updates, eblast announcements, direct mail brochures, fundraising letters, and advertisements.</h2>';
+        } elseif ($orgVar == "touchstone") {
+                echo '  <h1><em>Touchstone</em> magazine</h1>
+                        <h2>A bi-monthly, 56 page two-color magazine aimed at readers with an intellectual bent. I have designed every issue since December of 2004. This includes fully re-designing and coding the website, eblast announcements, direct mail brochures, fundraising letters, and advertisements.</h2>';
+        } elseif ($orgVar == "biretta") {
+                echo '  <h1>Biretta Books</h1>
+                        <h2>A Chicago-based Catholic book publisher who has brought me on for some lengthy books and special projects.';
+        };
+    };
 
+    function mainSectionHeading($orgVar) {
+        if (!$orgVar) {
+            echo'In Print';
+        } else {
+            echo 'Print Projects';
+        };
+    }
 
     //create thumbnails for homepage if no organization declared
     function thumbnailHomepage($aProject) {
@@ -66,6 +77,19 @@
     
                 </div>
              </div>';
+       }
+
+
+       function fetchHomepageThumbnails($orgVar,$displayFunction) {
+        if (!$orgVar) {
+            //this uses array
+            thumbnailHomepage($displayFunction[1]); 
+            thumbnailHomepage($displayFunction[12]);  
+            thumbnailHomepage($displayFunction[19]);
+        } else {
+            //this uses array 
+            outputThumbnails($displayFunction,$orgVar);
+        };
        }
 
 
