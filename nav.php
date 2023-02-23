@@ -40,7 +40,7 @@
                 <div class="col-lg-6">
                     <img src="logo1.png" class="left-logo" />
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 disappear">
                     <img src="logo2.png" class="right-logo" />
                 </div>
                 

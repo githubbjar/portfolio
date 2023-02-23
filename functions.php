@@ -30,7 +30,7 @@
         if (!$orgVar) {
             echo'
             <h1>Graphic Designer &amp; Web Developer </p>
-            <h2>who has been partnering with magazine and book publishers for 17 years. In that time I have single-handedly brought over 150 issues through the full design and production process from manuscript to layout to print to web.</h2>';
+            <h2>I have been partnering with magazine and book publishers for 17 years. In that time I have single-handedly brought over 150 issues through the full design and production process from manuscript to layout to print to web.</h2>';
         } elseif ($orgVar == "salvo") {
             echo '  <h1><em>Salvo</em> magazine</h1>
                     <h2>A quarterly, 64 page color magazine aimed at young adults. I have designed every issue since the beginning&#8212;the summer of 2007. This includes website updates, eblast announcements, direct mail brochures, fundraising letters, and advertisements.</h2>';
@@ -51,6 +51,8 @@
         };
     }
 
+    
+    
     //create thumbnails for homepage if no organization declared
     function thumbnailHomepage($aProject) {
         //create necessary variables from project object
@@ -62,19 +64,25 @@
         $description = $aProject->get_description();
     
         if ($projectNumber == 2) {
-            $org = 'salvo';        
+            $org = 'salvo'; 
+            $numOfProjects = 12;       
         } elseif ($projectNumber == 13) {
             $org = 'touchstone';
+            $numOfProjects = 6;
         } elseif ($projectNumber == 20) {
             $org = 'biretta';
+            $numOfProjects = 6;
         };
+
+        
     
         echo '<div class="col-md-4">
                 <a href="https://www.jerryjanquart.com/portfolio/?org='.$org.'"><img src="projects/'.$imageRootFolder.$cover1.'" class="coverhomepage" /></a>
                 <div class="description-box text-center">
                 
                     <img src="https://www.jerryjanquart.com/portfolio/projects/images/'.$org.'-logo.jpg" width="93%"/>
-    
+                    <p class="projectcount">[ '.$numOfProjects.' projects ]</p>
+
                 </div>
              </div>';
        }
@@ -108,8 +116,15 @@
             $type = "Biretta Books";
         };
 
+        $count = 0;
         foreach ($projects as $key=>$value)  {
             if ($value->projecttype == $type) {
+
+                if ($count == 3 && $type == "<em>Salvo</em> magazine") {
+                    echo '<div class="row"><div class="col"><p class="blurb"><span class="openingquote">&#8220;</span>I\'ve worked with Jerry at <em>Salvo</em> magazine for years. My go-to-description for him is \'brilliant.\' He has a knack for capturing the gist of an article, or even an entire issue, and illustrating everything in a way that is eye-catching, thought-provoking, and occasionally accented with a just-right touch of laugh-out-loud humor. He\'s also great to work with. Highly recommended.<span class="openingquote">&#8221;</span> <br /><span class="type">&#8212; Terrell Clemmons, Deputy Editor, <em>Salvo</em></span></p></div></div>';
+                    #continue;
+                }
+
                 echo '<div class="col-md-4">
                 <a href="https://www.jerryjanquart.com/portfolio/projects/number.php?project='.$value->projectnumber.'"><img src="projects/'.$value->imagerootfolder.$value->cover1.'" class="coverhomepage" /></a>
                     <div class="description-box text-center">
@@ -120,6 +135,8 @@
 
                     </div>
                 </div>';
+
+                $count++;
             }
         
         };

@@ -76,7 +76,7 @@
                     </div>
 
                     <div class="row computer"  id="online-item">
-                        <div class="col">
+                        <div class="col disappear">
                         
                             <p class="online-item"><span onclick="bgImageSwapForm()">Dontation Form</span></p>
                             
@@ -90,7 +90,7 @@
                         
                         </div>
                         <div class="col"></div>
-                        <div class="col">
+                        <div class="col disappear">
                         
                             <p class="online-item"><span onclick="bgImageSwapBackend()">php/mysql Backend</span></p>
 
@@ -104,7 +104,7 @@
                         
                         </div>        
                     </div>
-<!--
+
                     <div class="row content-container">
                         <div class="col">
                         <p class="symbol">	&#9660; <a name="online"></a></p>
@@ -112,15 +112,15 @@
                     </div>
 
                     <div class="row contact">
-                        <div class="col">
-                            <img src="https://www.jerryjanquart.com/portfolio/projects/images/resume-graphic.jpg" width="100%" />
+                        <div class="col-md-1"></div>
+                        <div class="col-md-4 resume-box">
+                            <a href="https://www.jerryjanquart.com/portfolio/Janquart_Resume.pdf" target="_blank"><img src="https://www.jerryjanquart.com/portfolio/projects/images/resume-graphic.jpg" class="resume" /></a>
                         </div>
-                        <div class="col">
-                        </div>
-                        <div class="col">
+                        <div class="col-md-7 disappear">
+                            <p class="closing_text">View My Resume. Let's Talk!</p>
                         </div>
                     </div>
--->                    
+                    
             
 
         
