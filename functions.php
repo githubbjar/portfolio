@@ -29,7 +29,7 @@
     function homepageGreeting($orgVar) {
         if (!$orgVar) {
             echo'
-            <h1>Graphic Designer &amp; Web Developer </p>
+            <h1>Art Director &amp; <br />Web Developer </p>
             <h2>I have been partnering with magazine and book publishers for 17 years. In that time I have single-handedly brought over 150 issues through the full design and production process from manuscript to layout to print to web.</h2>';
         } elseif ($orgVar == "salvo") {
             echo '  <h1><em>Salvo</em> magazine</h1>
@@ -121,17 +121,35 @@
             if ($value->projecttype == $type) {
 
                 if ($count == 3 && $type == "<em>Salvo</em> magazine") {
-                    echo '<div class="row"><div class="col" style="padding-left: 30px;"><p class="blurb"><span class="openingquote">&#8220;</span>I\'ve worked with Jerry at <em>Salvo</em> magazine for years. My go-to-description for him is \'brilliant.\' He has a knack for capturing the gist of an article, or even an entire issue, and illustrating everything in a way that is eye-catching, thought-provoking, and occasionally accented with a just-right touch of laugh-out-loud humor. He\'s also great to work with. Highly recommended.<span class="openingquote">&#8221;</span> <br /><span class="type">&#8212; Terrell Clemmons, Deputy Editor, <em>Salvo</em></span></p></div></div>';
+                    echo '
+                    <div class="row content-container">
+                        <div class="col">
+                        <span class="pink"><p class="symbol">	&#9660; <a name="online"></a></p>
+                        <p class="section-heading">Testimonial</div></span>
+                    </div>
+                    <div class="row"><div class="col" style="padding-left: 30px;"><p class="blurb"><span class="openingquote">&#8220;</span>I\'ve worked with Jerry at <em>Salvo</em> magazine for years. My go-to-description for him is \'brilliant.\' He has a knack for capturing the gist of an article, or even an entire issue, and illustrating everything in a way that is eye-catching, thought-provoking, and occasionally accented with a just-right touch of laugh-out-loud humor. He\'s also great to work with. Highly recommended.<span class="openingquote">&#8221;</span> <br /><span class="type">&#8212; Terrell Clemmons, Deputy Editor, <em>Salvo</em></span></p></div></div>';
                     #continue;
                 }
 
                 if ($count == 3 && $type == "<em>Touchstone</em> magazine") {
-                    echo '<div class="row"><div class="col" style="padding-left: 30px;"><p class="blurb"><span class="openingquote">&#8220;</span>An experienced designer in print and web formats, Jerry easily adapts his superb creativity to the wide range of graphic projects we give him. And he always gets the technical requirements right. Jerry is not just talented but also a pleasure to work with.<span class="openingquote">&#8221;</span> <br /><span class="type">&#8212; Richard Vaughan, President, Publishing Management Associates</span></p></div></div>';
+                    echo '
+                    <div class="row content-container">
+                        <div class="col">
+                        <span class="pink"><p class="symbol">	&#9660; <a name="online"></a></p>
+                        <p class="section-heading">Testimonial</div></span>
+                    </div>
+                    <div class="row"><div class="col" style="padding-left: 30px;"><p class="blurb"><span class="openingquote">&#8220;</span>An experienced designer in print and web formats, Jerry easily adapts his superb creativity to the wide range of graphic projects we give him. And he always gets the technical requirements right. Jerry is not just talented but also a pleasure to work with.<span class="openingquote">&#8221;</span> <br /><span class="type">&#8212; Richard Vaughan, President, Publishing Management Associates</span></p></div></div>';
                     #continue;
                 }
 
                 if ($count == 3 && $type == "Biretta Books") {
-                    echo '<div class="row"><div class="col" style="padding-left: 30px;"><p class="blurb"><span class="openingquote">&#8220;</span>Jerry is our "go to guy." He brings so much creativity to our projects. Not only is he efficient and fairly priced, but the finished products are better than when we initially envisioned. We are thankful to have Jerry as our vendor!<span class="openingquote">&#8221;</span> <br /><span class="type">&#8212; Nick Chapello, Biretta Books, Operations Director </span></p></div></div>';
+                    echo '
+                    <div class="row content-container">
+                        <div class="col">
+                        <span class="pink"><p class="symbol">	&#9660; <a name="online"></a></p>
+                        <p class="section-heading">Testimonial</div></span>
+                    </div>
+                    <div class="row"><div class="col" style="padding-left: 30px;"><p class="blurb"><span class="openingquote">&#8220;</span>Jerry is our "go to guy." He brings so much creativity to our projects. Not only is he efficient and fairly priced, but the finished products are better than when we initially envisioned. We are thankful to have Jerry as our vendor!<span class="openingquote">&#8221;</span> <br /><span class="type">&#8212; Nick Chapello, Biretta Books, Operations Director </span></p></div></div>';
                     #continue;
                 }
 
