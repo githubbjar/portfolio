@@ -33,7 +33,7 @@
                                 echo 'class="checked"';
                             };  
                         ?>>Biretta Books</a></li>
-                <li><a href="Janquart_Resume.pdf" target="_blank">Contact</a></li>
+                <li><a href="https://www.jerryjanquart.com/portfolio/Janquart_Resume.pdf" target="_blank">Contact</a></li>
             </div>
             <div class="row navigation text-center">
                 
