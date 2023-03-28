@@ -350,6 +350,10 @@ a {
     padding-top: 180px;
   }
 
+  .descriptive-box-misc {
+    padding-top: 0px;
+  }  
+
 a.btn {
     font-family: 'Nanum Gothic Coding', monospace;
 }  
@@ -393,6 +397,11 @@ img.homepage-logo {
     padding-bottom: 11px;
 }
 
+.button-bar-misc {
+    padding-top: 142px; 
+    padding-bottom: 11px;
+}
+
 .dropcap {
     float: left;
     font-size: 4em;
@@ -414,4 +423,18 @@ a.github {
     margin-left: -12px;
     margin-top: -91px;
     margin-bottom: 50px;
+}
+
+
+img.basic {
+    width: 80%;
+    margin: auto;
+}
+
+.misc_description {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    font-family: 'Nanum Gothic Coding', monospace;
+
 }

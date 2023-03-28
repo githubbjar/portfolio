@@ -5,7 +5,7 @@
                 <li><a 
                         href="https://www.jerryjanquart.com/portfolio" 
                         <?php  
-                            if (!$org && !$project) {
+                            if (!$org && !$project && !$category) {
                                 echo 'class="checked"';
                             };  
                         ?>
@@ -27,12 +27,23 @@
                                 echo 'class="checked"';
                             };  
                         ?>><em>Touchstone</em></a></li>
+                
                 <li><a href="https://www.jerryjanquart.com/portfolio/?org=biretta" 
                 <?php  
                             if ($org == 'biretta' || ((19 <= $project) && ($project <= 24))) {
                                 echo 'class="checked"';
                             };  
                         ?>>Biretta Books</a></li>
+
+
+
+                <li><a href="https://www.jerryjanquart.com/portfolio/misc.php?category=printads"<?php  
+                            if ($category == 'printads' || $category == 'webads' || $category == 'blasts') {
+                                echo 'class="checked"';
+                            };  
+                        ?>>Misc</a></li>
+
+
                 <li><a href="https://www.jerryjanquart.com/portfolio/Janquart_Resume.pdf" target="_blank">Contact</a></li>
             </div>
             <div class="row navigation text-center">

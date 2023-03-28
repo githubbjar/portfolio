@@ -12,6 +12,7 @@
     // set variables based on url
     
     $project = $params['project'];
+    $category = $params['category'];
     
     if (!$params['element']) {
         $element = 'computer';
@@ -33,12 +34,12 @@
             <h2>I have been partnering with magazine and book publishers for 17 years. In that time I have single-handedly brought over 150 issues through the full design and production process from manuscript to layout to print to web.</h2>';
         } elseif ($orgVar == "salvo") {
             echo '  <img src="https://www.jerryjanquart.com/portfolio/projects/images/salvo-header.jpg" class="org-header" />
-                    <h1><em>Salvo</em> magazine</h1>
-                    <h2>A quarterly, 64 page color magazine aimed at young adults. I have designed every issue since the beginning&#8212;the summer of 2007. This includes website updates, eblast announcements, direct mail brochures, fundraising letters, and advertisements.</h2>';
+                    <h1><em>Salvo</em> </h1>
+                    <h2>A quarterly, 64 page color magazine aimed at young adults. I have designed every issue since the beginning&#8212;the summer of 2007. This includes website updates, donation forms, subscription forms, eblast announcements, direct mail brochures, fundraising letters, and advertisements.</h2>';
         } elseif ($orgVar == "touchstone") {
                 echo '  <img src="https://www.jerryjanquart.com/portfolio/projects/images/touchstone-header.jpg" class="org-header" />
-                        <h1><em>Touchstone</em> magazine</h1>
-                        <h2>A bi-monthly, 56 page two-color magazine aimed at readers with an intellectual bent. I have designed every issue since December of 2004. This includes fully re-designing and coding the website, eblast announcements, direct mail brochures, fundraising letters, and advertisements.</h2>';
+                        <h1><em>Touchstone</em> </h1>
+                        <h2>A bi-monthly, 56 page two-color journal aimed at readers with an intellectual bent. I have designed every issue since December of 2004. This includes fully re-designing and coding the website, creating donation forms, subscription forms, eblast announcements, direct mail brochures, fundraising letters, kindle .mobi version, and advertisements.</h2>';
         } elseif ($orgVar == "biretta") {
                 echo '  <h1>Biretta Books</h1>
                         <h2>A Chicago-based Catholic book publisher who has brought me on for some lengthy books and special projects.';
@@ -48,6 +49,8 @@
     function mainSectionHeading($orgVar) {
         if (!$orgVar) {
             echo'In Print';
+        } elseif ($orgVar == "salvo" || $orgVar == "touchstone") {
+            echo 'Issues';
         } else {
             echo 'Print Projects';
         };
@@ -83,7 +86,7 @@
                 <div class="description-box text-center">
                 
                     <img src="https://www.jerryjanquart.com/portfolio/projects/images/'.$org.'-logo.jpg" width="93%"/>
-                    <p class="projectcount">[ '.$numOfProjects.' projects ]</p>
+                    <p class="projectcount">[ '.$numOfProjects.' examples ]</p>
 
                 </div>
              </div>';
