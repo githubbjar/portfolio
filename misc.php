@@ -27,7 +27,7 @@
     function getArrowHeading($var) {
         if ($var == 'blasts') {echo 'eBlasts';};
         if ($var == 'printads') {echo 'Ads &amp; Posters';};
-        if ($var == 'webads') {echo 'Web Ads';};
+        if ($var == 'webads') {echo 'Web Ads &amp; Graphics';};
     }
 
 
@@ -41,13 +41,15 @@
         public $imgsrc;
         public $url;
         public $caption;
+        public $layout2;
         
         // the constructor
-        function __construct($category, $imgsrc, $url, $caption) {
+        function __construct($category, $imgsrc, $url, $caption, $layout2) {
         $this->category = $category;
         $this->imgsrc = $imgsrc;
         $this->url = $url;
         $this->caption = $caption;
+        $this->layout2 = $layout2;
         }
 
         // the methods
@@ -63,6 +65,9 @@
         function get_caption() {
             return $this->caption;
         }
+        function get_layout2() {
+            return $this->layout2;
+        }
     }
 
   
@@ -70,37 +75,49 @@
     $allMiscItems = array();
     
     //the misc items
-    $allMiscItems[] = new MiscItem('blasts','https://www.jerryjanquart.com/portfolio/projects/images/misc/TS-blast.jpg', 'https://myemail.constantcontact.com/Touchstone--The-Online-Reader---On-the-Meaning-of-Christ-s-Prayer---His-Obedience-in-the-Garden.html?soid=1133865901875&aid=7X502Ma8LMU', '<em>Touchstone</em>');
+    $allMiscItems[] = new MiscItem('blasts','https://www.jerryjanquart.com/portfolio/projects/images/misc/TS-blast.jpg', 'https://myemail.constantcontact.com/Touchstone--The-Online-Reader---On-the-Meaning-of-Christ-s-Prayer---His-Obedience-in-the-Garden.html?soid=1133865901875&aid=7X502Ma8LMU', '<em>Touchstone</em>', false);
 
-    $allMiscItems[] = new MiscItem('blasts', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/Cal-blast.jpg', 'https://myemail.constantcontact.com/Order-the-St--James-calendar-for-the-new-year-.html?soid=1133865901875&aid=W_kzyTja5I4', 'St. James Calendar');
+    $allMiscItems[] = new MiscItem('blasts', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/Cal-blast.jpg', 'https://myemail.constantcontact.com/Order-the-St--James-calendar-for-the-new-year-.html?soid=1133865901875&aid=W_kzyTja5I4', 'St. James Calendar', false);
 
-    $allMiscItems[] = new MiscItem('blasts', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/SV-blast.jpg', 'https://myemail.constantcontact.com/The-SALVO-Spring-2023-Issue-Is-Now-Online-.html?soid=1133865901875&aid=NE9VZ1iZXIQ', '<em>Salvo</em>');
+    $allMiscItems[] = new MiscItem('blasts', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/SV-blast.jpg', 'https://myemail.constantcontact.com/The-SALVO-Spring-2023-Issue-Is-Now-Online-.html?soid=1133865901875&aid=NE9VZ1iZXIQ', '<em>Salvo</em>', false);
 
-    $allMiscItems[] = new MiscItem('blasts', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/TN-blast.jpg', 'https://myemail.constantcontact.com/Touchstone-Is-Back-in-Tennessee--FREE.html?soid=1133865901875&aid=U4IfxZpBoY0', '<em>Touchstone</em>');
+    $allMiscItems[] = new MiscItem('blasts', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/TN-blast.jpg', 'https://myemail.constantcontact.com/Touchstone-Is-Back-in-Tennessee--FREE.html?soid=1133865901875&aid=U4IfxZpBoY0', '<em>Touchstone</em>', false);
     
-    $allMiscItems[] = new MiscItem('blasts', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/Moody-blast-thumbnail.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/Moody-blast.jpg', 'Douglas Shaw &amp; Assoc.');
+    $allMiscItems[] = new MiscItem('blasts', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/Moody-blast-thumbnail.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/Moody-blast.jpg', 'Douglas Shaw &amp; Assoc.', true);
 
-    $allMiscItems[] = new MiscItem('blasts', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/cfd-blast-thumbnail.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/cfd-blast.jpg', 'Douglas Shaw &amp; Assoc.');
+    $allMiscItems[] = new MiscItem('blasts', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/cfd-blast-thumbnail.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/cfd-blast.jpg', 'Douglas Shaw &amp; Assoc.', true);
 
-    $allMiscItems[] = new MiscItem('blasts', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/scott-mission-thumbnail.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/scott-mission.jpg', 'Douglas Shaw &amp; Assoc.');
+    $allMiscItems[] = new MiscItem('blasts', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/scott-mission-thumbnail.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/scott-mission.jpg', 'Douglas Shaw &amp; Assoc.', true);
 
-    $allMiscItems[] = new MiscItem('blasts', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/cfd-blast2-thumbnail.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/cfd-blast2.jpg', 'Douglas Shaw &amp; Assoc.');
+    $allMiscItems[] = new MiscItem('blasts', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/cfd-blast2-thumbnail.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/cfd-blast2.jpg', 'Douglas Shaw &amp; Assoc.', true);
 
-    $allMiscItems[] = new MiscItem('printads', "https://www.jerryjanquart.com/portfolio/projects/images/misc/B-Broken.jpg", "https://www.jerryjanquart.com/portfolio/projects/images/misc/B-Broken.jpg", "Biretta Books");
+    $allMiscItems[] = new MiscItem('blasts', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/TS-Blast2-Thumbnail.jpg', 'https://myemail.constantcontact.com/The-March-April-2023-Issue-of-Touchstone.html?soid=1133865901875&aid=R06bbgjs-9Q', '<em>Touchstone</em>', false);
 
-    $allMiscItems[] = new MiscItem('printads', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/B-Inside-the-Light.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/B-Inside-the-Light.jpg', "Biretta Books");
+    $allMiscItems[] = new MiscItem('blasts', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/CCII-Blast-Thumbnail.jpg', 'https://myemail.constantcontact.com/Creed---Culture-II-----Now-Availalble-.html?soid=1133865901875&aid=B4qpYQGJSLs', '<em>Creed &amp; Culture II</em>', false);
 
-    $allMiscItems[] = new MiscItem('printads', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/PMA-People-of-the-Land.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/PMA-People-of-the-Land.jpg', 'PMA');
+    $allMiscItems[] = new MiscItem('printads', "https://www.jerryjanquart.com/portfolio/projects/images/misc/B-Broken.jpg", "https://www.jerryjanquart.com/portfolio/projects/images/misc/B-Broken.jpg", "Biretta Books", false);
 
-    $allMiscItems[] = new MiscItem('printads', 'https://www.jerryjanquart.com/portfolio/projects/images/sv49/mag-ad.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/sv49/mag-ad.jpg', '<em>Salvo</em>');
+    $allMiscItems[] = new MiscItem('printads', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/B-Inside-the-Light.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/B-Inside-the-Light.jpg', "Biretta Books", false);
 
-    $allMiscItems[] = new MiscItem('printads', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/FT-Josh-Mitchell.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/FT-Josh-Mitchell.jpg', 'PMA');
+    $allMiscItems[] = new MiscItem('printads', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/PMA-People-of-the-Land.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/PMA-People-of-the-Land.jpg', 'PMA', false);
 
-    $allMiscItems[] = new MiscItem('printads', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/FT-On-Freedom.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/FT-On-Freedom.jpg', 'PMA');
+    $allMiscItems[] = new MiscItem('printads', 'https://www.jerryjanquart.com/portfolio/projects/images/sv49/mag-ad.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/sv49/mag-ad.jpg', '<em>Salvo</em>',false);
 
-    $allMiscItems[] = new MiscItem('printads', 'https://www.jerryjanquart.com/portfolio/projects/images/ts334/share-ts.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/ts334/share-ts.jpg', '<em>Touchstone</em>'); 
+    $allMiscItems[] = new MiscItem('printads', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/FT-Josh-Mitchell.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/FT-Josh-Mitchell.jpg', 'PMA', false);
 
-    $allMiscItems[] = new MiscItem('printads', 'https://www.jerryjanquart.com/portfolio/projects/images/ts346/cal-ad.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/ts346/cal-ad.jpg', 'FSJ');
+    $allMiscItems[] = new MiscItem('printads', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/FT-On-Freedom.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/FT-On-Freedom.jpg', 'PMA', false);
+
+    $allMiscItems[] = new MiscItem('printads', 'https://www.jerryjanquart.com/portfolio/projects/images/ts334/share-ts.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/ts334/share-ts.jpg', '<em>Touchstone</em>', false); 
+
+    $allMiscItems[] = new MiscItem('printads', 'https://www.jerryjanquart.com/portfolio/projects/images/ts346/cal-ad.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/ts346/cal-ad.jpg', 'FSJ', false);
+
+    $allMiscItems[] = new MiscItem('printads', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/fakead-xombie.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/fakead-xombie.jpg', '<em>Salvo</em> Fake Ad', false);
+
+    $allMiscItems[] = new MiscItem('printads', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/ft-spring-fundraiser.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/ft-spring-fundraiser.jpg', 'PMA', false);
+
+    $allMiscItems[] = new MiscItem('printads', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/fakead-datebot.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/fakead-datebot.jpg', '<em>Salvo</em> Fake Ad', false);
+
+    $allMiscItems[] = new MiscItem('printads', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/fakead-vrpr.jpg', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/fakead-vrpr.jpg', '<em>Salvo</em> Fake Ad', false);
 
 
     
@@ -179,22 +196,49 @@
 
                                 <?php 
 
-                                
+                                    //IF BLASTS NORMAL LAYOUT
                                     for ($i = 0; $i <= sizeof($allMiscItems)-1; $i++) {
-                                        if ($allMiscItems[$i]->get_category() == 'blasts' && $category == 'blasts') {
+                                        if ($allMiscItems[$i]->get_category() == 'blasts' && $category == 'blasts' && $allMiscItems[$i]->get_layout2() == false) {
                                         echo    '<div class="col-sm-6">
                                                     <a href="'. $allMiscItems[$i]->get_url() .'" target="_blank" >
-                                                        <img src="'. $allMiscItems[$i]->get_imgsrc() .'" class="basic img-thumbnail" />
+                                                        <img src="'. $allMiscItems[$i]->get_imgsrc() .'" class="coverhomepage basic img-thumbnail" />
                                                     </a>
                                                     <p class="misc_description">'. $allMiscItems[$i]->get_caption() .'</p>
                                                 </div>';
-                                        } elseif ($allMiscItems[$i]->get_category() == 'printads' && $category == 'printads') {
-
+                                        } elseif ($allMiscItems[$i]->get_category() == 'blasts' && $category == 'blasts' && $allMiscItems[$i]->get_layout2() == true) { //IF BLASTS SECONDARY LAYOUT
+                                                echo '<!-- Button trigger modal -->
+                                                <div class="col-sm-6">
+                                                <img src="'. $allMiscItems[$i]->get_imgsrc() .'" class="basic coverhomepage img-thumbnail" data-bs-toggle="modal" data-bs-target="#'. $allMiscItems[$i]->get_imgsrc() .'"/>
+                                                <p class="misc_description">'. $allMiscItems[$i]->get_caption() .'</p>
+                                                </div>
+                                                <!-- Modal -->
+                                                <div class="modal modal-lg fade" id="'. $allMiscItems[$i]->get_imgsrc() .'" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-scrollable">
+                                                    <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                       <img src="'. $allMiscItems[$i]->get_url() .'" width="100%" data-bs-dismiss="modal" />
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Understood</button>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                </div>';
+                                        }; 
+                                        
+                                        if ($allMiscItems[$i]->get_category() == 'printads' && $category == 'printads') {
+                                            
+                                            //IF PRINTADS
                                             echo    '
                                             
                                             <!-- Button trigger modal -->
                                                 <div class="col-sm-6">
-                                                <img src="'. $allMiscItems[$i]->get_imgsrc() .'" class="basic img-thumbnail" data-bs-toggle="modal" data-bs-target="#'. $allMiscItems[$i]->get_imgsrc() .'"/>
+                                                <img src="'. $allMiscItems[$i]->get_imgsrc() .'" class="basic coverhomepage img-thumbnail" data-bs-toggle="modal" data-bs-target="#'. $allMiscItems[$i]->get_imgsrc() .'"/>
                                                 <p class="misc_description">'. $allMiscItems[$i]->get_caption() .'</p>
                                                 </div>
                                                 <!-- Modal -->
@@ -217,23 +261,10 @@
                                                 </div>';
                                             } 
                                             };
-                                
+                                //IF WEB ADS
                                             if ($category == 'webads') {
                                                 echo '
                                                 
-                                                <div class="row">
-                                                    <div class="col-sm-3"><img src="https://www.jerryjanquart.com/portfolio/projects/images/misc/web-acton-tall.jpg" width="100%" class="basic img-thumbnail">
-                                                    <p class="misc_description">PMA</p></div>
-                                                    <div class="col-sm-3"><img src="https://www.jerryjanquart.com/portfolio/projects/images/misc/web-bradley-tall.jpg" width="100%" class="basic img-thumbnail">
-                                                    <p class="misc_description">PMA</p></div>
-                                                    <div class="col-sm-3"><img src="https://www.jerryjanquart.com/portfolio/projects/images/misc/web-ft-marriage-tall.jpg" width="100%" class="basic img-thumbnail">
-                                                    <p class="misc_description">PMA</p></div>
-                                                    <div class="col-sm-3"><img src="https://www.jerryjanquart.com/portfolio/projects/images/misc/web-ft-shop-tall.jpg" width="100%" class="basic img-thumbnail">
-                                                    <p class="misc_description">PMA</p></div>
-                                                    
-                                                </div>
-                                                
-
                                                 <div class="row">
 
                                                 <img src="https://www.jerryjanquart.com/portfolio/projects/images/misc/web-wycliffe.gif" width="100%" class="basic img-thumbnail">
@@ -258,9 +289,35 @@
 
                                                 <div class="row">
 
+                                                <img src="https://www.jerryjanquart.com/portfolio/projects/images/misc/web-wycliffe.jpg" width="100%" class="basic img-thumbnail">
+                                                    <p class="misc_description">Douglas Shaw &amp; Assoc.</p>
+
+                                                </div>
+
+                                                <div class="row">
+
+                                                <img src="https://www.jerryjanquart.com/portfolio/projects/images/misc/webCCII.jpg" width="100%" class="basic img-thumbnail">
+                                                    <p class="misc_description"><em>Touchstone</em></p>
+
+                                                </div>
+
+                                                <div class="row">
+
                                                 <img src="https://www.jerryjanquart.com/portfolio/projects/images/misc/web-providence-banner.jpg" width="100%" class="basic img-thumbnail">
                                                     <p class="misc_description">PMA</p><p><br /></p>
 
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-3"><img src="https://www.jerryjanquart.com/portfolio/projects/images/misc/web-ligouri.jpg" width="100%" class="basic img-thumbnail">
+                                                    <p class="misc_description">PMA</p></div>
+                                                    <div class="col-sm-3"><img src="https://www.jerryjanquart.com/portfolio/projects/images/misc/web-bradley-tall.jpg" width="100%" class="basic img-thumbnail">
+                                                    <p class="misc_description">PMA</p></div>
+                                                    <div class="col-sm-3"><img src="https://www.jerryjanquart.com/portfolio/projects/images/misc/web-reno.png" width="100%" class="basic img-thumbnail">
+                                                    <p class="misc_description">PMA</p></div>
+                                                    <div class="col-sm-3"><img src="https://www.jerryjanquart.com/portfolio/projects/images/misc/web-ft-shop-tall.jpg" width="100%" class="basic img-thumbnail">
+                                                    <p class="misc_description">PMA</p></div>
+                                                    
                                                 </div>
                                                 
                                                 ';

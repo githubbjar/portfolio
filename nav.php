@@ -41,7 +41,7 @@
                             if ($category == 'printads' || $category == 'webads' || $category == 'blasts') {
                                 echo 'class="checked"';
                             };  
-                        ?>>Misc</a></li>
+                        ?>>Ads &amp; Blasts</a></li>
 
 
                 <li><a href="https://www.jerryjanquart.com/portfolio/Janquart_Resume.pdf" target="_blank">Contact</a></li>

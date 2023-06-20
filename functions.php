@@ -31,7 +31,7 @@
         if (!$orgVar) {
             echo'
             <h1>Graphic Designer &amp; <br />Web Developer </p>
-            <h2>I have been partnering with magazine and book publishers for 17 years. In that time I have single-handedly brought over 150 issues through the full design and production process from manuscript to layout to print to web.</h2>';
+            <h2>I have been partnering with magazine and book publishers for 17 years. In that time I have single-handedly brought over 150 issues through the full design and production process from manuscript to layout to print to web. I\'ve also produced print &amp; web ads, eblasts, dm campaigns, fundraising campaigns, and more.</h2>';
         } elseif ($orgVar == "salvo") {
             echo '  <img src="https://www.jerryjanquart.com/portfolio/projects/images/salvo-header.jpg" class="org-header" />
                     <h1><em>Salvo</em> </h1>
