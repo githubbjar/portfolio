@@ -154,7 +154,7 @@
                         <span class="pink"><p class="symbol">	&#9660; <a name="online"></a></p>
                         <p class="section-heading">Testimonial</div></span>
                     </div>
-                    <div class="row"><div class="col" style="padding-left: 30px;"><p class="blurb"><span class="openingquote">&#8220;</span>Jerry is our "go to guy." He brings so much creativity to our projects. Not only is he efficient and fairly priced, but the finished products are better than when we initially envisioned. We are thankful to have Jerry as our vendor!<span class="openingquote">&#8221;</span> <br /><span class="type">&#8212; Nick Chapello, Biretta Books, Operations Director </span></p></div></div>';
+                    <div class="row"><div class="col" style="padding-left: 30px;"><p class="blurb"><span class="openingquote">&#8220;</span>Jerry is our \'go to guy.\' He brings so much creativity to our projects. Not only is he efficient and fairly priced, but the finished products are better than when we initially envisioned. We are thankful to have Jerry as our vendor!<span class="openingquote">&#8221;</span> <br /><span class="type">&#8212; Nick Chapello, Biretta Books, Operations Director </span></p></div></div>';
                     #continue;
                 }
 

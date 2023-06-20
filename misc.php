@@ -9,12 +9,12 @@
 
     function geth1($var) {
         if ($var == 'blasts') {echo 'Email Marketing';};
-        if ($var == 'printads') {echo 'Print Advertisements';};
+        if ($var == 'printads') {echo 'In Print';};
         if ($var == 'webads') {echo 'Online Advertisements';};
     }
     function geth2($var) {
         if ($var == 'blasts') {echo 'A selection of email marketing pieces that went out for Publishing Management Associates, <em>Touchstone</em>, <em>Salvo</em>, and Douglas Shaw & Associates.';};
-        if ($var == 'printads') {echo 'A selection of print ads and posters that I created for Publishing Management Associates, Biretta Books, and The Fellowship of St. James publications.';};
+        if ($var == 'printads') {echo 'A selection of signs, ads, and posters that I created for Publishing Management Associates, Biretta Books, and The Fellowship of St. James publications.';};
         if ($var == 'webads') {echo 'A selection of web ads and gifs that I created for Publishing Management Associates and Douglas Shaw &amp; Associates.';};
     }
 
@@ -26,7 +26,7 @@
 
     function getArrowHeading($var) {
         if ($var == 'blasts') {echo 'eBlasts';};
-        if ($var == 'printads') {echo 'Ads &amp; Posters';};
+        if ($var == 'printads') {echo 'Signs, Ads &amp; Posters';};
         if ($var == 'webads') {echo 'Web Ads &amp; Graphics';};
     }
 
@@ -94,6 +94,10 @@
     $allMiscItems[] = new MiscItem('blasts', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/TS-Blast2-Thumbnail.jpg', 'https://myemail.constantcontact.com/The-March-April-2023-Issue-of-Touchstone.html?soid=1133865901875&aid=R06bbgjs-9Q', '<em>Touchstone</em>', false);
 
     $allMiscItems[] = new MiscItem('blasts', 'https://www.jerryjanquart.com/portfolio/projects/images/misc/CCII-Blast-Thumbnail.jpg', 'https://myemail.constantcontact.com/Creed---Culture-II-----Now-Availalble-.html?soid=1133865901875&aid=B4qpYQGJSLs', '<em>Creed &amp; Culture II</em>', false);
+
+    $allMiscItems[] = new MiscItem('printads', "https://www.jerryjanquart.com/portfolio/projects/images/misc/touchstone-floor-sign.jpg", "https://www.jerryjanquart.com/portfolio/projects/images/misc/touchstone-floor-sign.jpg", "<em>Touchstone</em>", false);
+
+    $allMiscItems[] = new MiscItem('printads', "https://www.jerryjanquart.com/portfolio/projects/images/misc/salvo-floor-sign.jpg", "https://www.jerryjanquart.com/portfolio/projects/images/misc/salvo-floor-sign.jpg", "<em>Salvo</em>", false);
 
     $allMiscItems[] = new MiscItem('printads', "https://www.jerryjanquart.com/portfolio/projects/images/misc/B-Broken.jpg", "https://www.jerryjanquart.com/portfolio/projects/images/misc/B-Broken.jpg", "Biretta Books", false);
 
