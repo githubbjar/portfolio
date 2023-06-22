@@ -13,11 +13,9 @@
                             
                             <p class="online-item"><span onclick="bgImageSwapLogin()">API Login</span></p>
                             
-                            <!--<p class="online-item"><span onclick="bgImageSwapVideo()">Video</a></p>-->
+                            <p class="online-item"><span onclick="bgImageSwapVideo()">Video</a></p>
 
                             <p class="online-item"><span onclick="bgImageSwapEblast()">eblast</a></p>
-
-                            <p class="online-item"><span onclick="bgImageSwapPhoto1()">Photo 1</a></p>
                         
                         </div>
                         <div class="col"></div>
@@ -27,13 +25,13 @@
 
                             <p class="online-item"><span onclick="bgImageSwapEpub()">.epub / .mobi</span></p>
                             
-                            <!--<p class="online-item"><span onclick="bgImageSwapSocial()">Social Media</span></p>-->
+                            <p class="online-item"><span onclick="bgImageSwapSocial()">Social Media</span></p>
                             
                             <p class="online-item"><span onclick="bgImageSwapCms()">October CMS; Wordpress</a></p>
 
                             <p class="online-item"><span onclick="bgImageSwapJavascript()">Javascript</a></p>
 
-                            <p class="online-item"><span onclick="bgImageSwapPhoto2()">Photo 2</a></p>
+                            
                         
                         </div>        
                     </div>
