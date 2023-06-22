@@ -160,6 +160,8 @@
     <link rel="preload" href="computer_images/cms.jpg" as="image">
     <link rel="preload" href="computer_images/javascript.jpg" as="image">
     <link rel="preload" href="computer_images/eblast.jpg" as="image">
+    <link rel="preload" href="computer_images/photo1.jpg" as="image">
+    <link rel="preload" href="computer_images/photo2.jpg" as="image">
 
     
 </head>
@@ -337,41 +339,9 @@
                         
                     </div>
 
-                     <div class="row content-container">
-                        <div class="col">
-                        <p class="symbol">	&#9660; <a name="online"></a></p>
-                        <p class="section-heading">Online</div>
-                    </div>
-
-                    <div class="row computer"  id="online-item">
-                        <div class="col disappear">
-                        
-                            <p class="online-item"><span onclick="bgImageSwapForm()">Dontation Form</span></p>
-                            
-                            <p class="online-item"><span onclick="bgImageSwapCart()">Shopping Cart</span></p>
-                            
-                            <p class="online-item"><span onclick="bgImageSwapLogin()">API Login</span></p>
-                            
-                            <p class="online-item"><span onclick="bgImageSwapVideo()">Video</a></p>
-
-                            <p class="online-item"><span onclick="bgImageSwapEblast()">eblast</a></p>
-                        
-                        </div>
-                        <div class="col"></div>
-                        <div class="col disappear">
-                        
-                            <p class="online-item"><span onclick="bgImageSwapBackend()">php/mysql Backend</span></p>
-
-                            <p class="online-item"><span onclick="bgImageSwapEpub()">.epub / .mobi</span></p>
-                            
-                            <p class="online-item"><span onclick="bgImageSwapSocial()">Social Media</span></p>
-                            
-                            <p class="online-item"><span onclick="bgImageSwapCms()">October CMS; Wordpress</a></p>
-
-                            <p class="online-item"><span onclick="bgImageSwapJavascript()">Javascript</a></p>
-                        
-                        </div>        
-                    </div>
+                     <!--ONLINE FOOTER-->
+                    <?php include 'online-footer.php'; ?>
+                    <!--END ONLINE FOOTER-->
 
                     <div class="row content-container">
                         <div class="col">

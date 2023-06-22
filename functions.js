@@ -28,3 +28,9 @@ function bgImageSwapJavascript() {
 function bgImageSwapEblast() {
     document.getElementById("online-item").style.backgroundImage = "url(computer_images/eblast.jpg)";
 }; 
+function bgImageSwapPhoto1() {
+    document.getElementById("online-item").style.backgroundImage = "url(computer_images/photo1.jpg)";
+}; 
+function bgImageSwapPhoto2() {
+    document.getElementById("online-item").style.backgroundImage = "url(computer_images/photo2.jpg)";
+}; 
