@@ -44,7 +44,7 @@
                         ?>>Ads &amp; Blasts</a></li>
 
 
-                <li><a href="https://www.jerryjanquart.com/portfolio/Janquart_Resume.pdf" target="_blank">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/jerry-janquart-67aa608/" target="_blank">LinkedIn</a></li>
             </div>
             <div class="row navigation text-center">
                 

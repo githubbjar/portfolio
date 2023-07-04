@@ -31,7 +31,7 @@
         if (!$orgVar) {
             echo'
             <h1>Graphic Designer &amp; <br />Web Developer </p>
-            <h2>I have been partnering with magazine and book publishers for more than 17 years. In that time I have single-handedly brought over 150 magazines through the full design and production process from manuscript to layout to print to web. I\'ve also produced books, print ads, web ads, eblasts, direct mail campaigns, fundraising campaigns, and more. </h2>';
+            <h2>I have been partnering with magazine and book publishers for more than 17 years. In that time I have single-handedly brought over 150 magazines through the full design and production process from manuscript to layout to print to web. I\'ve also created books, websites, print ads, web ads, eblasts, direct mail campaigns, fundraising campaigns, and more. </h2>';
         } elseif ($orgVar == "salvo") {
             echo '  <img src="https://www.jerryjanquart.com/portfolio/projects/images/salvo-header.jpg" class="org-header" />
                     <h1><em>Salvo</em> </h1>
@@ -130,7 +130,7 @@
                     <div class="row content-container">
                         <div class="col">
                         <span class="pink"><p class="symbol">	&#9660; <a name="online"></a></p>
-                        <p class="section-heading">Testimonial</div></span>
+                        <p class="section-heading">Word on the Street</div></span>
                     </div>
                     <div class="row"><div class="col" style="padding-left: 30px;"><p class="blurb"><span class="openingquote">&#8220;</span>I\'ve worked with Jerry at <em>Salvo</em> magazine for years. My go-to-description for him is \'brilliant.\' He has a knack for capturing the gist of an article, or even an entire issue, and illustrating everything in a way that is eye-catching, thought-provoking, and occasionally accented with a just-right touch of laugh-out-loud humor. He\'s also great to work with. Highly recommended.<span class="openingquote">&#8221;</span> <br /><span class="type">&#8212; Terrell Clemmons, Deputy Editor, <em>Salvo</em></span></p></div></div>';
                     #continue;
@@ -141,7 +141,7 @@
                     <div class="row content-container">
                         <div class="col">
                         <span class="pink"><p class="symbol">	&#9660; <a name="online"></a></p>
-                        <p class="section-heading">Testimonial</div></span>
+                        <p class="section-heading">Endorsement</div></span>
                     </div>
                     <div class="row"><div class="col" style="padding-left: 30px;"><p class="blurb"><span class="openingquote">&#8220;</span>An experienced designer in print and web formats, Jerry easily adapts his superb creativity to the wide range of graphic projects we give him. And he always gets the technical requirements right. Jerry is not just talented but also a pleasure to work with.<span class="openingquote">&#8221;</span> <br /><span class="type">&#8212; Richard Vaughan, President, Publishing Management Associates</span></p></div></div>';
                     #continue;
